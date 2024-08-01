@@ -1,0 +1,12 @@
+D:\DDT\FixStructure\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\bin\Debug\net8.0\BusinessLogicLayerFront.deps.json
+D:\DDT\FixStructure\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\bin\Debug\net8.0\BusinessLogicLayerFront.dll
+D:\DDT\FixStructure\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\bin\Debug\net8.0\BusinessLogicLayerFront.pdb
+D:\DDT\FixStructure\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\BusinessLogicLayerFront.csproj.AssemblyReference.cache
+D:\DDT\FixStructure\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\BusinessLogicLayerFront.GeneratedMSBuildEditorConfig.editorconfig
+D:\DDT\FixStructure\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\BusinessLogicLayerFront.AssemblyInfoInputs.cache
+D:\DDT\FixStructure\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\BusinessLogicLayerFront.AssemblyInfo.cs
+D:\DDT\FixStructure\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\BusinessLogicLayerFront.csproj.CoreCompileInputs.cache
+D:\DDT\FixStructure\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\BusinessLogicLayerFront.dll
+D:\DDT\FixStructure\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\refint\BusinessLogicLayerFront.dll
+D:\DDT\FixStructure\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\BusinessLogicLayerFront.pdb
+D:\DDT\FixStructure\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\ref\BusinessLogicLayerFront.dll

@@ -1,0 +1,170 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\fixstructure\\webfrontend\\frontend\\web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\fixstructure\\webfrontend\\frontend\\web\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBFCEC5-C133-4AEF-8025-F1A8819FB459}|BusinessLogicLayerFront\\BusinessLogicLayerFront.csproj|d:\\ddt\\fixstructure\\webfrontend\\frontend\\businesslogiclayerfront\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBFCEC5-C133-4AEF-8025-F1A8819FB459}|BusinessLogicLayerFront\\BusinessLogicLayerFront.csproj|solutionrelative:businesslogiclayerfront\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBFCEC5-C133-4AEF-8025-F1A8819FB459}|BusinessLogicLayerFront\\BusinessLogicLayerFront.csproj|d:\\ddt\\fixstructure\\webfrontend\\frontend\\businesslogiclayerfront\\services\\contrast\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBFCEC5-C133-4AEF-8025-F1A8819FB459}|BusinessLogicLayerFront\\BusinessLogicLayerFront.csproj|solutionrelative:businesslogiclayerfront\\services\\contrast\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\fixstructure\\webfrontend\\frontend\\web\\views\\user\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\views\\user\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBFCEC5-C133-4AEF-8025-F1A8819FB459}|BusinessLogicLayerFront\\BusinessLogicLayerFront.csproj|d:\\ddt\\fixstructure\\webfrontend\\frontend\\businesslogiclayerfront\\services\\contrast\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBFCEC5-C133-4AEF-8025-F1A8819FB459}|BusinessLogicLayerFront\\BusinessLogicLayerFront.csproj|solutionrelative:businesslogiclayerfront\\services\\contrast\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\fixstructure\\webfrontend\\frontend\\web\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\fixstructure\\webfrontend\\frontend\\web\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\fixstructure\\webfrontend\\frontend\\web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 387,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\Services\\Contrast\\IUserService.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayerFront\\Services\\Contrast\\IUserService.cs",
+              "ToolTip": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\Services\\Contrast\\IUserService.cs",
+              "RelativeToolTip": "BusinessLogicLayerFront\\Services\\Contrast\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T03:34:42.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\Services\\Contrast\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayerFront\\Services\\Contrast\\ICategoryService.cs",
+              "ToolTip": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\Services\\Contrast\\ICategoryService.cs",
+              "RelativeToolTip": "BusinessLogicLayerFront\\Services\\Contrast\\ICategoryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T03:34:41.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\Views\\User\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\User\\SignUp.cshtml",
+              "ToolTip": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\Views\\User\\SignUp.cshtml",
+              "RelativeToolTip": "Web\\Views\\User\\SignUp.cshtml",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAQwG8AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T03:07:10.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayerFront\\Services\\UserService.cs",
+              "ToolTip": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\Services\\UserService.cs",
+              "RelativeToolTip": "BusinessLogicLayerFront\\Services\\UserService.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAnwGAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T02:36:31.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\Views\\User\\Login.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\User\\Login.cshtml",
+              "ToolTip": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\Views\\User\\Login.cshtml",
+              "RelativeToolTip": "Web\\Views\\User\\Login.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T02:17:28.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Web\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAcwGAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T09:27:25.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\User\\Index.cshtml",
+              "ToolTip": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "Web\\Views\\User\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-31T09:27:06.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Web\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAuwB8BAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-31T09:27:01.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\DDT\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-31T09:26:57.886Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

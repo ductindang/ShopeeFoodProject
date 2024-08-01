@@ -1,0 +1,14 @@
+D:\DDT\FixStructure\WebApiBackEnd\BackEnd\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.deps.json
+D:\DDT\FixStructure\WebApiBackEnd\BackEnd\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+D:\DDT\FixStructure\WebApiBackEnd\BackEnd\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+D:\DDT\FixStructure\WebApiBackEnd\BackEnd\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\DDT\FixStructure\WebApiBackEnd\BackEnd\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\DDT\FixStructure\WebApiBackEnd\BackEnd\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\DDT\FixStructure\WebApiBackEnd\BackEnd\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+D:\DDT\FixStructure\WebApiBackEnd\BackEnd\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\DDT\FixStructure\WebApiBackEnd\BackEnd\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
+D:\DDT\FixStructure\WebApiBackEnd\BackEnd\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
+D:\DDT\FixStructure\WebApiBackEnd\BackEnd\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
+D:\DDT\FixStructure\WebApiBackEnd\BackEnd\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+D:\DDT\FixStructure\WebApiBackEnd\BackEnd\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.runtimeconfig.json
+D:\DDT\FixStructure\WebApiBackEnd\BackEnd\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.genruntimeconfig.cache

@@ -1,0 +1,418 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+    Layout = "~/Views/Shared/_LayoutProject.cshtml";
+}
+
+<style>
+    .banner {
+        background-image: url('https://shopeefood.vn/app/assets/img/main-banner.jpg?45bff8c9ec408a5ba51f9fdef662324e');
+        width: 100%;
+        background-size: cover;
+        height: 1000px;
+        background-repeat: no-repeat;
+        color: white;
+        display: flex;
+        padding: 0 8%;
+    }
+
+    .left-info {
+        margin-top: 200px;
+        flex: 1
+    }
+
+    .btn-search {
+        background-color: #0288d1;
+        cursor: pointer;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .right-info {
+        margin-top: 50px;
+    }
+
+    .icon-list-deal {
+        position: relative;
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+    }
+
+        .icon-list-deal .square:first-child {
+            top: 0;
+            left: 0;
+        }
+
+        .icon-list-deal .square:nth-child(2) {
+            top: 0;
+            right: 0;
+        }
+
+        .icon-list-deal .square:nth-child(3) {
+            left: 0;
+            bottom: 0;
+        }
+
+        .icon-list-deal .square:nth-child(4) {
+            right: 0;
+            bottom: 0;
+        }
+
+        .icon-list-deal .square {
+            width: 3px;
+            height: 3px;
+            background-color: #0288d1;
+            position: absolute;
+        }
+
+    .custom-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+</style>
+
+<div class="banner">
+    <div class="container left-info">
+        <h3>Order Food, deliverry from 20'...</h3>
+        <p>From ........ places in HCM city from 00:00 - 23:59</p>
+        <div class="input-group" style="display: flex; padding: 20px 0; align-items: center; flex-wrap: nowrap">
+            <input type="text" style="padding: 13px; border: none; outline: none; border-radius: 10px 0 0 10px; padding-right: 70px;" placeholder="Find places, item, address" />
+            <i class=" btn-search bi bi-search" style="align-self: start;font-size: 20px; padding: 10px 20px;"></i>
+        </div>
+        <div class="input-group" style="display: flex; padding: 20px 0; align-items: center">
+            <div style="background-color: transparent; border: 1px solid white; padding: 8px; margin: 0 10px 10px 0; border-radius: 7px"><span style="color: white">All</span></div>
+            <div style="background-color: transparent; border: 1px solid white; padding: 8px; margin: 0 10px 10px 0; border-radius: 7px"><span style="color: white">Food</span></div>
+            <div style="background-color: transparent; border: 1px solid white; padding: 8px; margin: 0 10px 10px 0; border-radius: 7px"><span style="color: white">Drink</span></div>
+            <div style="background-color: transparent; border: 1px solid white; padding: 8px; margin: 0 10px 10px 0; border-radius: 7px"><span style="color: white">Vege</span></div>
+            <div style="background-color: transparent; border: 1px solid white; padding: 8px; margin: 0 10px 10px 0; border-radius: 7px"><span style="color: white">Cakes</span></div>
+            <div style="background-color: transparent; border: 1px solid white; padding: 8px; margin: 0 10px 10px 0; border-radius: 7px"><span style="color: white">Dessert</span></div>
+            <div style="background-color: transparent; border: 1px solid white; padding: 8px; margin: 0 10px 10px 0; border-radius: 7px"><span style="color: white">Homemade</span></div>
+            <div style="background-color: transparent; border: 1px solid white; padding: 8px; margin: 0 10px 10px 0; border-radius: 7px"><span style="color: white">Streetfood</span></div>
+            <div style="background-color: transparent; border: 1px solid white; padding: 8px; margin: 0 10px 10px 0; border-radius: 7px"><span style="color: white">Pizza/Burger</span></div>
+            <div style="background-color: transparent; border: 1px solid white; padding: 8px; margin: 0 10px 10px 0; border-radius: 7px"><span style="color: white">Chicken</span></div>
+            <div style="background-color: transparent; border: 1px solid white; padding: 8px; margin: 0 10px 10px 0; border-radius: 7px"><span style="color: white">Hopot</span></div>
+            <div style="background-color: transparent; border: 1px solid white; padding: 8px; margin: 0 10px 10px 0; border-radius: 7px"><span style="color: white">Sushi</span></div>
+            <div style="background-color: transparent; border: 1px solid white; padding: 8px; margin: 0 10px 10px 0; border-radius: 7px"><span style="color: white">Noodles</span></div>
+            <div style="background-color: transparent; border: 1px solid white; padding: 8px; margin: 0 10px 10px 0; border-radius: 7px"><span style="color: white">Rice box</span></div>
+        </div>
+        <p style="font-size: 20px">Better experiences with ShopeeFood App</p>
+
+        <a href="#"><img style="width: 45%; max-width: 200px" src="~/image/logoappstore.png" /></a>
+        <a href="#"><img style="width: 45%; max-width: 200px; margin: 20px 0;" src="~/image/logoggplay.jpg" /></a>
+
+    </div>
+    <div class="right-info" style="flex: 1">
+        <div class="custom-scroll" style="overflow-y: auto; height: 900px; z-index: 1; ">
+        @* <div class="custom-scroll" style="overflow-y: auto;"> *@
+            <div style="background-color: white; width 100%; padding: 12px 0 14px 30px; border-radius:5px">
+                <a style="width: 100%; border: none; background-color: transparent; color: black; cursor: pointer" onclick="choose()">
+                    <strong style="color: #0288d1">Food </strong>
+                    <i class="bi bi-arrow-right-short" style="font-size: 20px"></i> Selected delivery address
+                </a>
+            </div>
+
+
+            <div class="bg-white" style="margin-top: 20px; padding: 20px; border-radius: 10px">
+                <div style="display: flex; justify-content: space-between">
+                    <h4 style="color: black">Deal</h4>
+                    <a href="#" style="color: lightseagreen; text-decoration: none;">
+                        <span class="icon-list-deal">
+                            <span class="square"></span>
+                            <span class="square"></span>
+                            <span class="square"></span>
+                            <span class="square"></span>
+                        </span>
+                        View all
+                    </a>
+                </div>
+
+                <div style="display: flex; box-sizing: border-box; flex-wrap: wrap; gap: 10px; justify-content: space-between">
+                    <div style="border: 1px solid gray; width: 30%; border-radius: 10px">
+                        <img style="width: 100%; border-radius: 10px 10px 0 0" src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lstys79d6hsp9b@resize_ss280x175!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Texas Chicken - Hoang Van Thu"><strong>Texas Chicken - Hoang Van Thu</strong></div>
+                        <div class="address-res" style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM">392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM</div>
+                        <hr style="color: black" />
+                        <div style="color:#187caa; font-weight: bold; margin: -10px 0 10px 10px; font-size: 15px"><i class="fas fa-tag" style="color: red !important; margin-right: 3px"></i> Item discount</div>
+                    </div>
+
+                    <div style="border: 1px solid gray; width: 30%; border-radius: 10px">
+                        <img style="width: 100%; border-radius: 10px 10px 0 0" src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lstys79d6hsp9b@resize_ss280x175!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Texas Chicken - Hoang Van Thu"><strong>Texas Chicken - Hoang Van Thu</strong></div>
+                        <div class="address-res" style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM">392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM</div>
+                        <hr style="color: black" />
+                        <div style="color:#187caa; font-weight: bold; margin: -10px 0 10px 10px; font-size: 15px"><i class="fas fa-tag" style="color: red !important; margin-right: 3px"></i> Item discount</div>
+                    </div>
+
+                    <div style="border: 1px solid gray; width: 30%; border-radius: 10px">
+                        <img style="width: 100%; border-radius: 10px 10px 0 0" src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lstys79d6hsp9b@resize_ss280x175!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Texas Chicken - Hoang Van Thu"><strong>Texas Chicken - Hoang Van Thu</strong></div>
+                        <div class="address-res" style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM">392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM</div>
+                        <hr style="color: black" />
+                        <div style="color:#187caa; font-weight: bold; margin: -10px 0 10px 10px; font-size: 15px"><i class="fas fa-tag" style="color: red !important; margin-right: 3px"></i> Item discount</div>
+                    </div>
+
+                    <div style="border: 1px solid gray; width: 30%; border-radius: 10px">
+                        <img style="width: 100%; border-radius: 10px 10px 0 0" src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lstys79d6hsp9b@resize_ss280x175!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Texas Chicken - Hoang Van Thu"><strong>Texas Chicken - Hoang Van Thu</strong></div>
+                        <div class="address-res" style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM">392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM</div>
+                        <hr style="color: black" />
+                        <div style="color:#187caa; font-weight: bold; margin: -10px 0 10px 10px; font-size: 15px"><i class="fas fa-tag" style="color: red !important; margin-right: 3px"></i> Item discount</div>
+                    </div>
+
+                    <div style="border: 1px solid gray; width: 30%; border-radius: 10px">
+                        <img style="width: 100%; border-radius: 10px 10px 0 0" src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lstys79d6hsp9b@resize_ss280x175!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Texas Chicken - Hoang Van Thu"><strong>Texas Chicken - Hoang Van Thu</strong></div>
+                        <div class="address-res" style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM">392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM</div>
+                        <hr style="color: black" />
+                        <div style="color:#187caa; font-weight: bold; margin: -10px 0 10px 10px; font-size: 15px"><i class="fas fa-tag" style="color: red !important; margin-right: 3px"></i> Item discount</div>
+                    </div>
+
+                    <div style="border: 1px solid gray; width: 30%; border-radius: 10px">
+                        <img style="width: 100%; border-radius: 10px 10px 0 0" src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lstys79d6hsp9b@resize_ss280x175!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Texas Chicken - Hoang Van Thu"><strong>Texas Chicken - Hoang Van Thu</strong></div>
+                        <div class="address-res" style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM">392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM</div>
+                        <hr style="color: black" />
+                        <div style="color:#187caa; font-weight: bold; margin: -10px 0 10px 10px; font-size: 15px"><i class="fas fa-tag" style="color: red !important; margin-right: 3px"></i> Item discount</div>
+                    </div>
+
+                    <div style="border: 1px solid gray; width: 30%; border-radius: 10px">
+                        <img style="width: 100%; border-radius: 10px 10px 0 0" src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lstys79d6hsp9b@resize_ss280x175!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Texas Chicken - Hoang Van Thu"><strong>Texas Chicken - Hoang Van Thu</strong></div>
+                        <div class="address-res" style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM">392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM</div>
+                        <hr style="color: black" />
+                        <div style="color:#187caa; font-weight: bold; margin: -10px 0 10px 10px; font-size: 15px"><i class="fas fa-tag" style="color: red !important; margin-right: 3px"></i> Item discount</div>
+                    </div>
+
+                    <div style="border: 1px solid gray; width: 30%; border-radius: 10px">
+                        <img style="width: 100%; border-radius: 10px 10px 0 0" src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lstys79d6hsp9b@resize_ss280x175!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Texas Chicken - Hoang Van Thu"><strong>Texas Chicken - Hoang Van Thu</strong></div>
+                        <div class="address-res" style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM">392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM</div>
+                        <hr style="color: black" />
+                        <div style="color:#187caa; font-weight: bold; margin: -10px 0 10px 10px; font-size: 15px"><i class="fas fa-tag" style="color: red !important; margin-right: 3px"></i> Item discount</div>
+                    </div>
+
+                    <div style="border: 1px solid gray; width: 30%; border-radius: 10px">
+                        <img style="width: 100%; border-radius: 10px 10px 0 0" src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lstys79d6hsp9b@resize_ss280x175!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Texas Chicken - Hoang Van Thu"><strong>Texas Chicken - Hoang Van Thu</strong></div>
+                        <div class="address-res" style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM">392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM</div>
+                        <hr style="color: black" />
+                        <div style="color:#187caa; font-weight: bold; margin: -10px 0 10px 10px; font-size: 15px"><i class="fas fa-tag" style="color: red !important; margin-right: 3px"></i> Item discount</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-white" style="margin-top: 20px; padding: 20px; border-radius: 10px">
+                <div style="display: flex; justify-content: space-between">
+                    <h4 style="color: black">Collections</h4>
+                    <a href="#" style="color: lightseagreen; text-decoration: none;">
+                        <span class="icon-list-deal">
+                            <span class="square"></span>
+                            <span class="square"></span>
+                            <span class="square"></span>
+                            <span class="square"></span>
+                        </span>
+                        View all
+                    </a>
+                </div>
+
+                <div style="display: flex; box-sizing: border-box; flex-wrap: wrap; gap: 10px; justify-content: space-between">
+                    <div style="width: 30%;">
+                        <img style="width: 100%; border-radius: 10px" src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-ly4kirq58gjn65@resize_ss320x320!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Million good foods, just 0VND"><strong>Million good foods, just 0VND</strong></div>
+                        <div class="" style="color: #0288d1; font-size: 13px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="200 locations">200 locations</div>
+                    </div>
+
+                    <div style="width: 30%;">
+                        <img style="width: 100%; border-radius: 10px" src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-ly4kirq58gjn65@resize_ss320x320!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Million good foods, just 0VND"><strong>Million good foods, just 0VND</strong></div>
+                        <div class="" style="color: #0288d1; font-size: 13px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="200 locations">200 locations</div>
+                    </div>
+
+                    <div style="width: 30%;">
+                        <img style="width: 100%; border-radius: 10px" src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-ly4kirq58gjn65@resize_ss320x320!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Million good foods, just 0VND"><strong>Million good foods, just 0VND</strong></div>
+                        <div class="" style="color: #0288d1; font-size: 13px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="200 locations">200 locations</div>
+                    </div>
+
+                    <div style="width: 30%;">
+                        <img style="width: 100%; border-radius: 10px" src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-ly4kirq58gjn65@resize_ss320x320!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Million good foods, just 0VND"><strong>Million good foods, just 0VND</strong></div>
+                        <div class="" style="color: #0288d1; font-size: 13px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="200 locations">200 locations</div>
+                    </div>
+
+                    <div style="width: 30%;">
+                        <img style="width: 100%; border-radius: 10px" src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-ly4kirq58gjn65@resize_ss320x320!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Million good foods, just 0VND"><strong>Million good foods, just 0VND</strong></div>
+                        <div class="" style="color: #0288d1; font-size: 13px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="200 locations">200 locations</div>
+                    </div>
+
+                    <div style="width: 30%;">
+                        <img style="width: 100%; border-radius: 10px" src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-ly4kirq58gjn65@resize_ss320x320!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Million good foods, just 0VND"><strong>Million good foods, just 0VND</strong></div>
+                        <div class="" style="color: #0288d1; font-size: 13px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="200 locations">200 locations</div>
+                    </div>
+
+                    <div style="width: 30%;">
+                        <img style="width: 100%; border-radius: 10px" src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-ly4kirq58gjn65@resize_ss320x320!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Million good foods, just 0VND"><strong>Million good foods, just 0VND</strong></div>
+                        <div class="" style="color: #0288d1; font-size: 13px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="200 locations">200 locations</div>
+                    </div>
+
+                    <div style="width: 30%;">
+                        <img style="width: 100%; border-radius: 10px" src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-ly4kirq58gjn65@resize_ss320x320!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Million good foods, just 0VND"><strong>Million good foods, just 0VND</strong></div>
+                        <div class="" style="color: #0288d1; font-size: 13px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="200 locations">200 locations</div>
+                    </div>
+
+                    <div style="width: 30%;">
+                        <img style="width: 100%; border-radius: 10px" src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-ly4kirq58gjn65@resize_ss320x320!" />
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Million good foods, just 0VND"><strong>Million good foods, just 0VND</strong></div>
+                        <div class="" style="color: #0288d1; font-size: 13px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="200 locations">200 locations</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bg-white" style="margin-top: 20px; padding: 20px; border-radius: 10px">
+                <div style="display: flex; justify-content: space-between; padding: 20px">
+                    <button style="background-color: transparent; border: none"><span>Near</span></button>
+                    <button style="background-color: transparent; border: none"><span>Top</span></button>
+                    <button style="background-color: transparent; border: none"><span>Recent</span></button>
+                    <button style="background-color: transparent; border: none"><span>Featured</span></button>
+                    <select style="padding: 5px; border: 1px solid #d7d7d7; border-radius: 4px">
+                        <option value="-1">Choose District</option>
+                        <option value="1">District 1</option>
+                        <option value="2">Go Vap</option>
+                        <option value="3">District 2</option>
+                        <option value="4">Tan Binh</option>
+                    </select>
+                </div>
+
+                <div style="display: flex; padding: 20px; gap: 20px">
+                    <div style="">
+                        <img style="width: 144px;" src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsvep19m04hwc0@resize_ss280x175!" />
+                    </div>
+                    <div style="">
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis"><strong>Pho Bay Cu - Beef Pho & Chicken Pho - Ho Hoc Lam</strong></div>
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">397 Ho Hoc Lam, An Lac Ward, Binh Tan District, HCM City </div>
+                        <div style="color: black">
+                            <span><i class="bi bi-tags"></i></span>
+                            <span>Minimum 20k</span>
+                            <span><i class="bi bi-coin"></i></span>
+                            <span>Price 37k</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; padding: 20px; gap: 20px">
+                    <div style="">
+                        <img style="width: 144px;" src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsvep19m04hwc0@resize_ss280x175!" />
+                    </div>
+                    <div style="">
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis"><strong>Pho Bay Cu - Beef Pho & Chicken Pho - Ho Hoc Lam</strong></div>
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">397 Ho Hoc Lam, An Lac Ward, Binh Tan District, HCM City </div>
+                        <div style="color: black">
+                            <span><i class="bi bi-tags"></i></span>
+                            <span>Minimum 20k</span>
+                            <span><i class="bi bi-coin"></i></span>
+                            <span>Price 37k</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; padding: 20px; gap: 20px">
+                    <div style="">
+                        <img style="width: 144px;" src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsvep19m04hwc0@resize_ss280x175!" />
+                    </div>
+                    <div style="">
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis"><strong>Pho Bay Cu - Beef Pho & Chicken Pho - Ho Hoc Lam</strong></div>
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">397 Ho Hoc Lam, An Lac Ward, Binh Tan District, HCM City </div>
+                        <div style="color: black">
+                            <span><i class="bi bi-tags"></i></span>
+                            <span>Minimum 20k</span>
+                            <span><i class="bi bi-coin"></i></span>
+                            <span>Price 37k</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; padding: 20px; gap: 20px">
+                    <div style="">
+                        <img style="width: 144px;" src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsvep19m04hwc0@resize_ss280x175!" />
+                    </div>
+                    <div style="">
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis"><strong>Pho Bay Cu - Beef Pho & Chicken Pho - Ho Hoc Lam</strong></div>
+                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">397 Ho Hoc Lam, An Lac Ward, Binh Tan District, HCM City </div>
+                        <div style="color: black">
+                            <span><i class="bi bi-tags"></i></span>
+                            <span>Minimum 20k</span>
+                            <span><i class="bi bi-coin"></i></span>
+                            <span>Price 37k</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div style="text-align: center"><button style=" color: #0288d1; background-color: transparent; border: none">Load more <i class="bi bi-arrow-clockwise"></i></button></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="order-protection container" style="background-color: white; width: 100%; margin-top: 30px; padding-bottom: 30px" >
+    <div style="width: 80%; margin: auto; padding-top: 40px">
+        <p><strong>How about your purchase order protection?</strong></p>
+        <p>ShopeeFood will protect your purchase order from the weather by using bag or box during shipping.</p>
+        <img style="width: 100%" src="https://shopeefood.vn/app/assets/img/Box-food-preservation-footer.png?82adfd2ec19091256d09a94dac77aaba" />
+    </div>
+</div>
+
+<div class="order-protection container" style="background-color: white; width: 100%; margin-top: 30px">
+    <div style="width: 80%;height: 100%; margin: auto; padding-top: 40px; display: flex">
+        <div>
+            <p><strong>Shopee Partner App</strong></p>
+            <p><strong>- Shopee Partner App</strong> is an order management application for partner restaurants of on-site ordering service</p>
+            <p>
+                <strong>- Shopeefood.vn</strong> is always ready to cooperate with restaurants, cafes, cafes ... to expand business as well as increase customers. Connect to the ordering and delivery system to reduce management, operation, marketing, technology ...
+                <br />
+                Register to join: <a href="#" style="text-decoration: none">here</a>
+            </p>
+        </div>
+        <div>
+            <img style="height: 100%; width: 170%" src="https://shopeefood.vn/app/assets/img/banner-phone-reg-merchant.png?d657e88bd087afc6919b1c6c6da0dc49" />
+        </div>
+    </div>
+</div>
+
+
+<div class="order-protection container" style="background-color: white; width: 100%; margin-top: 30px">
+    <div style="width: 80%;height: 100%; margin: auto; padding-top: 40px; display: flex">
+        <div>
+            <p style="color: #0288d1"><strong><span style="color: red">ShopeeFood</span> is seeking for ShopeeFood Partners</strong></p>
+            <p>To help you make money in your Free Time</p>
+            <p>
+                <strong style="color: red">ShopeeFood</strong> is seeking cooperation with individuals to deliver food from our merchants to our customers, we will provide mobile application, and some necessary tools for you to receive & deliver, make more income in your Free Time
+                <br />
+                Join our Partners network <a href="#" style="text-decoration: none">right here</a> or Email to <a href="#" style="text-decoration: none">tuyendung@gofast.vn</a> - or call to 1900 6510.
+            </p>
+        </div>
+        <div>
+            <img style="height: 100%; width: 200%" src="https://shopeefood.vn/app/assets/img/bg-deliverynow-dat-mon-truc-tuyen-giao-hang-tan-noi.png?0a045d11888296eb26473f6126cad3f4" />
+        </div>
+    </div>
+</div>
+
+<div>
+
+</div>
+
+
+<script>
+    function choose() {
+        alert("chon");
+    }
+</script>
