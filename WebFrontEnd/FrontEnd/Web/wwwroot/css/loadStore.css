@@ -1,0 +1,52 @@
+﻿
+.store-item {
+    border: 1px solid gray;
+    /*margin-left: 1%;*/
+    width: 18%;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 1%;
+    box-sizing: border-box;
+    min-width: 120px;
+    /*height: 100%;*/
+}
+
+    .store-item img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+.store-name {
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+}
+
+.address-res {
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    opacity: 0.6;
+    border-bottom: 0.5px solid black;
+    padding: 0 5px 10px 5px;
+}
+
+.icon-item-discount {
+    color: #187caa;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.fa-tag {
+    color: red !important;
+    margin-right: 3px;
+}
+
+.turn-off {
+    display: none;
+}

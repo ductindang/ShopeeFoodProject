@@ -1,0 +1,53 @@
+﻿@using BusinessLogicLayerFront.DTOs
+@using Newtonsoft.Json
+@{
+    ViewData["Title"] = "Load Store";
+    Layout = "~/Views/Shared/_LayoutProject.cshtml";
+    var districtsJson = Context.Session.GetString("districts");
+    var districts = JsonConvert.DeserializeObject<IEnumerable<DistrictDto>>(districtsJson);
+}
+<link href="~/css/storeindex.css" rel="stylesheet" />
+<div class="container" style="min-height: 300px">
+    <div class="list-deal-title">
+        <h4 style="">List deal</h4>
+    </div>
+    <div>
+        @* <button style="color: gray; text-transform: uppercase">Areas</button> *@
+
+        <div class="dropdown" style="width: 100%">
+            <div style="display: flex; justify-content: space-between">
+                <button class="dropbtn dropdown-toggle" style="padding: 5px; border: 1px solid #d7d7d7; border: none; text-transform: uppercase; border-radius: 10px">
+                    Choose District
+                </button>
+                <select class="dropbtn dropdown-toggle" style="padding: 5px; border: 1px solid #d7d7d7; text-transform: uppercase; border-radius: 10px; ">
+                    <option>All</option>
+                    <option>Most discount</option>
+                    <option>Latest</option>
+                    <option>Expire soon</option>
+                </select>
+            </div>
+            
+            <div class="dropdown-content" style="border: 1px solid #d7d7d7; border-radius: 10px; display: none; max-height: 220px; overflow-y: auto; width: 80%">
+                @if (districts != null && districts.Any())
+                {
+                    foreach (var district in districts)
+                    {
+                        <div>
+                            <input type="checkbox" class="district-checkbox" style="" id="district-@district.Id" value="@district.Id">
+                            <label for="district-@district.Id">@district.Name</label>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+
+    </div>
+    <hr />
+    <div class="bg-white list-deal" style="">
+        <div class="sub-list-deal" id="sub-list" style="">
+        </div>
+    </div>
+</div>
+
+
+<script src="~/js/storeindex.js" asp-append-version="true"></script>

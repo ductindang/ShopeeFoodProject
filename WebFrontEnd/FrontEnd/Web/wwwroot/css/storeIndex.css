@@ -1,0 +1,61 @@
+﻿
+.list-deal {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 330px;
+    
+}
+
+.list-deal-title {
+    margin-top: 20px;
+}
+
+h4 {
+    color: black;
+    text-align: center;
+}
+
+.sub-list-deal {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+/* Ensure the dropdown container has relative positioning */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown content to overlay the content below */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Overlay content */
+    background-color: #f9f9f9; /* Background color for the dropdown */
+    min-width: 200px; /* Adjust as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow for better visibility */
+    z-index: 1; /* Ensure it sits above other content */
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next line if necessary */
+    gap: 10px; /* Space between items */
+    padding: 10px; /* Padding inside the dropdown */
+}
+
+    /* Style for each item in the dropdown */
+    .dropdown-content div {
+        display: flex;
+        align-items: center; /* Center items vertically */
+        gap: 5px; /* Space between checkbox and label */
+        box-sizing: border-box; /* Include padding and border in the item's total width and height */
+        padding: 10px;
+        flex: 0 1 30%;
+    }
+
+    
+
+        .dropdown-content div:last-child {
+            border-bottom: none; /* Remove border from the last item */
+        }

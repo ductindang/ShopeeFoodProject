@@ -1,0 +1,25 @@
+﻿@model BusinessLogicLayerFront.DTOs.SubCategoryDto
+@using BusinessLogicLayerFront.DTOs
+@using Newtonsoft.Json
+@{
+    ViewData["Title"] = "Load Product";
+    Layout = "~/Views/Shared/_LayoutProject.cshtml";
+    
+}
+<link href="~/css/storeindex.css" rel="stylesheet" />
+
+<div class="container">
+    <div class="list-deal-title">
+        <h4 style="">Product by sub category @Model.Name</h4>
+    </div>
+
+    <hr />
+    <div class="bg-white list-deal" style="">
+        <div class="sub-list-deal" id="sub-list" style="">
+        </div>
+    </div>
+</div>
+<script>
+    var subId = @Model.Id;
+</script>
+<script src="~/js/storesbysubcategory.js" asp-append-version="true"></script>

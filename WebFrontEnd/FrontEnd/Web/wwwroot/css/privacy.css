@@ -1,0 +1,261 @@
+﻿
+.banner {
+    background-image: url('https://shopeefood.vn/app/assets/img/main-banner.jpg?45bff8c9ec408a5ba51f9fdef662324e');
+    width: 100%;
+    background-size: cover;
+    height: 1000px;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    padding: 0 8%;
+}
+
+.left-info {
+    margin-top: 200px;
+    flex: 1
+}
+
+.search-bar {
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+    .search-bar input {
+        padding: 13px;
+        border: none;
+        outline: none;
+        border-radius: 10px 0 0 10px;
+        padding-right: 70px;
+        width: 80%;
+        min-width: 250px;
+    }
+
+    .search-bar i {
+        align-self: start;
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+.btn-search {
+    background-color: #0288d1;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.sub-category-container {
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    max-width: 450px;
+    margin-left: 5px;
+}
+
+.sub-category {
+    background-color: #333; /* Màu nền mặc định */
+    color: white; /* Màu chữ mặc định */
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+}
+
+    .sub-category:hover {
+        background-color: #555; /* Màu nền khi hover */
+    }
+
+#sub-category {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 8px;
+    margin: 0 10px 10px 0;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.logo-appstore {
+    width: 45%;
+    max-width: 200px;
+}
+
+.logo-ggplay {
+    width: 45%;
+    max-width: 200px;
+    margin: 20px 0;
+}
+
+.right-info {
+    margin-top: 50px;
+}
+
+.custom-scroll {
+    overflow-y: auto;
+    height: 900px;
+    z-index: 1;
+}
+
+.select-delivery {
+    background-color: white;
+    width 100%;
+    padding: 12px 0 14px 30px;
+    border-radius: 5px;
+}
+
+    .select-delivery a {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        color: black;
+        cursor: pointer;
+    }
+
+
+.list-deal {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 330px;
+}
+
+    .list-deal > div:first-child {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .list-deal > div:first-child a {
+            color: lightseagreen;
+            text-decoration: none;
+        }
+
+.sub-list-deal {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.list-deal button {
+    color: #0288d1;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+.icon-list-deal {
+    position: relative;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+}
+
+    .icon-list-deal .square:first-child {
+        top: 0;
+        left: 0;
+    }
+
+    .icon-list-deal .square:nth-child(2) {
+        top: 0;
+        right: 0;
+    }
+
+    .icon-list-deal .square:nth-child(3) {
+        left: 0;
+        bottom: 0;
+    }
+
+    .icon-list-deal .square:nth-child(4) {
+        right: 0;
+        bottom: 0;
+    }
+
+    .icon-list-deal .square {
+        width: 3px;
+        height: 3px;
+        background-color: #0288d1;
+        position: absolute;
+    }
+
+.custom-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.order-protection {
+    background-color: white;
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+    .order-protection div {
+        width: 80%;
+        margin: auto;
+        padding-top: 40px;
+    }
+
+.shopee-partner {
+    background-color: white;
+    width: 100%;
+    margin-top: 30px;
+}
+
+    .shopee-partner > div {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        padding-top: 40px;
+        display: flex;
+    }
+
+.shopee-seeking {
+    background-color: white;
+    width: 100%;
+    margin-top: 30px;
+}
+
+    .shopee-seeking > div {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        padding-top: 40px;
+        display: flex;
+    }
+
+
+
+
+/*.product-item {
+    border : 1px solid lightgray !important;
+    margin : 10px 0;
+    width : 100%;
+    display : flex;
+    padding-left : 7px;
+    cursor : pointer;
+}*/
+
+
+
+

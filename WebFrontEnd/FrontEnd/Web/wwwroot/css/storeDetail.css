@@ -1,0 +1,102 @@
+﻿
+.detail {
+    display: flex;
+    padding: 30px;
+}
+
+.detail > img {
+    width: 55%;
+    height: 60%;
+}
+
+.detail > div {
+    width: 40%;
+    margin-left: 50px;
+}
+
+.bistro > span:first-child {
+    color: gray;
+    font-size: 11px;
+}
+
+.bistro > span:nth-child(2) {
+    color: #187caa;
+    font-size: 11px;
+    margin-left: 20px;
+}
+
+.link-address {
+    color: #187caa;
+    font-size: 13px;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.product-address{
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.number-comment {
+    background-color: #ffc107;
+    color: white;
+    width: 40px;
+    max-height: 22px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+.left-menu {
+    background-color: white;
+    height: 500px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+    flex: 1;
+}
+
+    .left-menu a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: gray;
+    }
+
+.content {
+    background-color: white;
+    height: 1500px;
+    flex: 3;
+    margin: 0 30px;
+    min-width: 590px;
+    padding-right: 10px;
+}
+
+.right-menu {
+    background-color: white;
+    height: 500px;
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex: 1;
+    width: 20%;
+}
+
+.btn-adding {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 20px;
+    width: 22px;
+    height: 22px;
+    background-color: #ee4d2d;
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    padding: 0 3px;
+}
