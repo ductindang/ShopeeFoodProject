@@ -2,6 +2,8 @@
 .detail {
     display: flex;
     padding: 30px;
+    justify-content: center;
+    padding-top: 100px;
 }
 
 .detail > img {
@@ -10,7 +12,7 @@
 }
 
 .detail > div {
-    width: 40%;
+    width: 30%;
     margin-left: 50px;
 }
 
@@ -50,15 +52,93 @@
 
 
 
+.product-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.product-details {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.original-price {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+    margin-bottom: 5px;
+}
+
+.discounted-price {
+    font-size: 18px;
+    color: #0288d1;
+}
+
+.btn-adding {
+    font-size: 24px;
+    color: #0288d1;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #0288d1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .btn-adding:hover {
+        background-color: #0288d1;
+        color: #fff;
+    }
+
+
+
 
 
 
 .left-menu {
     background-color: white;
-    height: 500px;
-    border: 1px solid #ccc;
+    height: 300px;
     padding: 10px;
-    position: relative;
+    /*position: relative;*/
     flex: 1;
 }
 
@@ -68,24 +148,60 @@
         color: gray;
     }
 
+.left-menu {
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.menu-title {
+    color: #dc3545;
+    font-size: 1.25rem;
+    margin-bottom: 15px; 
+    font-weight: bold; 
+}
+
+.menu-item {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; 
+}
+
+    .menu-item:hover {
+        background-color: #e9ecef;
+    }
+
+.menu-link {
+    text-decoration: none; 
+    color: #333;
+    font-size: 1rem;
+}
+
+    .menu-link:hover {
+        color: #007bff; 
+    }
+
+
+
+
+
 .content {
     background-color: white;
-    height: 1500px;
     flex: 3;
     margin: 0 30px;
     min-width: 590px;
     padding-right: 10px;
 }
 
-.right-menu {
-    background-color: white;
-    height: 500px;
-    width: 200px;
-    border: 1px solid #ccc;
-    padding: 10px;
+
+
+
+/*.right-menu {
     flex: 1;
-    width: 20%;
-}
+}*/
 
 .btn-adding {
     font-size: 20px;
@@ -100,3 +216,55 @@
     margin-top: 15px;
     padding: 0 3px;
 }
+
+.right-menu {
+    width: 300px;
+    border-left: 1px solid #eee;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.cart-title {
+    color: #dc3545; /* Red color for the title */
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.close-btn {
+    cursor: pointer;
+    color: #dc3545;
+    font-size: 15px;
+    text-align: right;
+    margin-bottom: 15px; /* Space below the button */
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+.cart-items {
+    margin-bottom: 30px; /* Space above the checkout button */
+}
+
+.checkout-btn {
+    padding: 15px;
+    width: 100%;
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+    .checkout-btn:hover {
+        background-color: #218838; /* Darker green on hover */
+    }
+

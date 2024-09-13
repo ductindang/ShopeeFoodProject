@@ -17,6 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.unobtrusive-ajax/3.2.6/jquery.unobtrusive-ajax.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link href="~/css/loadproject.css" rel="stylesheet" />
 </head>
 
@@ -44,7 +45,7 @@
                                         foreach (var province in provSession)
                                         {
                                         // Assuming province.Quantity exists
-                                            <option value="@province.Id" data-name="@province.Name">@province.Name (100023)</option>
+                                            <option value="@province.Id" data-name="@province.Name">@province.Name</option>
                                         }
                                     }
                                 }
@@ -65,27 +66,53 @@
                         }
                     </ul>
 
-                    <ul class="navbar-nav ">
+                    <ul class="navbar-nav" style="width: 20%;">
                         @{
                             var userCheckJson = Context.Session.GetString("userCheck");
+
                             if (!string.IsNullOrEmpty(userCheckJson))
                             {
                                 var userCheck = JsonConvert.DeserializeObject<UserDto>(userCheckJson);
-                                    <li class="nav-item">
-                                        <span class="nav-link text-dark">Welcome, @userCheck.FullName!</span>
+                                var avatarUrl = !string.IsNullOrEmpty(userCheck.Avatar)
+                                ? userCheck.Avatar
+                                : "https://down-bs-vn.img.susercontent.com/vn-11134523-7r98o-ltks4aztc8wad6.webp";
+
+                                <li class="nav-item d-flex align-items-center user-content" style="white-space: nowrap; width: 70%;" id="userDropdown">
+                                    <div style="display: flex; overflow: hidden; text-overflow: ellipsis;">
+                                        <div>
+                                            <img src="@avatarUrl"
+                                                 alt=""
+                                                 style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;"
+                                                 onerror="this.onerror=null; this.src='https://down-bs-vn.img.susercontent.com/vn-11134523-7r98o-ltks4aztc8wad6.webp';" />
+                                        </div>
+                                        <span class="nav-link text-dark" style="overflow: hidden; text-overflow: ellipsis;" title="@userCheck.FullName">@userCheck.FullName</span>
+                                    </div>
+                                </li>
+
+                                <div id="userMenu" class="dropdown-menu" style="display: none; ">
+                                    <li style="display: flex; align-items: center; padding: 5px 10px;">
+                                        <i class="fas fa-history" style="margin-right: 10px;"></i>
+                                        <div><a asp-controller="Order" asp-action="OrderHistory" style="text-decoration: none; color: black">Order History</a></div>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark" asp-controller="User" asp-action="Logout">Logout</a>
+                                    <li style="display: flex; align-items: center; padding: 5px 10px;">
+                                        <i class="fas fa-user-edit" style="margin-right: 10px;"></i>
+                                        <div><a asp-controller="User" asp-action="EditAccount" style="text-decoration: none; color: black">Edit Account</a></div>
                                     </li>
+                                </div>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-controller="User" asp-action="Logout">Logout</a>
+                                </li>
                             }
                             else
                             {
-                                    <li class="nav-item">
-                                        <a class="login nav-link text-danger" asp-controller="User" asp-action="Login">Login</a>
-                                    </li>
+                                <li class="nav-item">
+                                    <a class="login nav-link text-danger" asp-controller="User" asp-action="Login">Login</a>
+                                </li>
                             }
                         }
                     </ul>
+
                 </div>
 
             </div>
@@ -152,11 +179,27 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var userCheckJson = @Html.Raw(JsonConvert.SerializeObject(userCheckJson));
+            if (userCheckJson) {
+                var userCheck = JSON.parse(userCheckJson);
+                localStorage.setItem("userCheck", JSON.stringify(userCheck));
+            } 
+            else {
+                localStorage.removeItem("userCheck");
+            }
+        });
+    </script>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
+
 </html>
+
 
 <script src="~/js/loadproject.js" asp-append-version="true"></script>

@@ -27,19 +27,27 @@ namespace WebApi.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<SubCategoryRequest>> GetSubCategoryById(int id)
         {
-            var subCate = await _subCategoryService.GetSubCategoryById(id);
-            if(subCate == null)
+            try
             {
-                return NotFound();
+                var subCate = await _subCategoryService.GetSubCategoryById(id);
+                if (subCate == null)
+                {
+                    return NotFound();
+                }
+                return Ok(subCate);
             }
-            return Ok(subCate);
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
         }
 
         [HttpPost]
         public async Task<ActionResult<SubCategoryRequest>> InsertSubCategory(BaseSubCategory subCategoryDto)
         {
             var subCate = await _subCategoryService.InsertSubCategory(subCategoryDto);
-            if(subCate == null)
+            if (subCate == null)
             {
                 return NotFound();
             }
@@ -51,7 +59,7 @@ namespace WebApi.Controllers
         public async Task<ActionResult<SubCategoryRequest>> UpdateSubCategory(SubCategoryRequest subCategoryDto, int id)
         {
             var subCate = await _subCategoryService.GetSubCategoryById(id);
-            if(subCate == null)
+            if (subCate == null)
             {
                 return NotFound();
             }
@@ -64,7 +72,7 @@ namespace WebApi.Controllers
         public async Task<ActionResult<SubCategoryRequest>> DeleteSubCategory(int id)
         {
             var subCate = await _subCategoryService.GetSubCategoryById(id);
-            if(subCate == null)
+            if (subCate == null)
             {
                 return NotFound();
             }
@@ -77,13 +85,13 @@ namespace WebApi.Controllers
         public async Task<ActionResult<IEnumerable<SubCategoryRequest>>> GetSubCategoriesByCategoryId(int categoryId)
         {
             var subCates = await _subCategoryService.GetSubCategoriesByCategoryId(categoryId);
-            if(subCates == null || !subCates.Any())
+            if (subCates == null || !subCates.Any())
             {
                 return NotFound();
             }
             return Ok(subCates);
         }
 
-        
+
     }
 }

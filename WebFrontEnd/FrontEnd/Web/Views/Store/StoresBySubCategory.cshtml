@@ -5,6 +5,11 @@
     ViewData["Title"] = "Load Product";
     Layout = "~/Views/Shared/_LayoutProject.cshtml";
     
+    var districtsJson = Context.Session.GetString("districts");
+    var districts = JsonConvert.DeserializeObject<IEnumerable<DistrictDto>>(districtsJson);
+
+    var subCatesJson = Context.Session.GetString("subCates");
+    var subCates = JsonConvert.DeserializeObject<IEnumerable<SubCategoryDto>>(subCatesJson);
 }
 <link href="~/css/storeindex.css" rel="stylesheet" />
 
@@ -13,8 +18,60 @@
         <h4 style="">Product by sub category @Model.Name</h4>
     </div>
 
+    <div>
+        @* <button style="color: gray; text-transform: uppercase">Areas</button> *@
+
+        <div class="dropdown" style="width: 100%">
+            <div style="display: flex; justify-content: space-between">
+                <div style="display: flex; gap: 12px">
+                    <button class="dropbtn dropdown-toggle" style="padding: 5px; border: 1px solid #d7d7d7; border: none; text-transform: uppercase; border-radius: 10px; font-size: 13px; display: flex; flex-direction: column; align-items: center;">
+                        Areas
+                    </button>
+                    <button class="dropCatebtn dropdown-toggle" style="padding: 5px; border: 1px solid #d7d7d7; border: none; text-transform: uppercase; border-radius: 10px; font-size: 13px; display: flex; flex-direction: column; align-items: center;">
+                        Categories
+                    </button>
+                </div>
+                
+                @* <select class="dropbtn dropdown-toggle" style="padding: 5px; border: 1px solid #d7d7d7; text-transform: uppercase; border-radius: 10px; ">
+                    <option>All</option>
+                    <option>Most discount</option>
+                    <option>Latest</option>
+                    <option>Expire soon</option>
+                </select> *@
+            </div>
+
+            <div class="dropdown-content" style="border: 1px solid #d7d7d7; border-radius: 10px; display: none; max-height: 220px; overflow-y: auto; width: 80%">
+                @if (districts != null && districts.Any())
+                {
+                    foreach (var district in districts)
+                    {
+                        <div>
+                            <input type="checkbox" class="district-checkbox custom-checkbox" id="district-@district.Id" value="@district.Id">
+                            <label for="district-@district.Id">@district.Name</label>
+                        </div>
+                    }
+                }
+            </div>
+
+            <div class="dropdown-cate-content" style="border: 1px solid #d7d7d7; border-radius: 10px; display: none; max-height: 220px; overflow-y: auto; width: 80%">
+                @if (subCates != null && subCates.Any())
+                {
+                    foreach (var subCate in subCates)
+                    {
+                        if (subCate.Name.ToLower() != "all")
+                        {
+                            <div>
+                                <input type="checkbox" class="subCate-checkbox custom-checkbox" id="subCate-@subCate.Id" value="@subCate.Id">
+                                <label for="subCate-@subCate.Id">@subCate.Name</label>
+                            </div>
+                        }
+                    }
+                }
+            </div>
+        </div>
+    </div>
     <hr />
-    <div class="bg-white list-deal" style="">
+    <div class="list-deal" style="">
         <div class="sub-list-deal" id="sub-list" style="">
         </div>
     </div>

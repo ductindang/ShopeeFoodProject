@@ -29,6 +29,10 @@ namespace BusinessLogicLayer.Mappings
             CreateMap<SubCategory, SubCategoryRequest>().ReverseMap();
             CreateMap<Store, StoreRequest>().ReverseMap();
             CreateMap<StoreAddress, StoreAddressRequest>().ReverseMap();
+            CreateMap<UserAddress, UserAddressRequest>().ReverseMap();
+            CreateMap<BaseUserAddress, UserAddress>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore())
+                .ReverseMap();
             CreateMap<User, UserDto>().ReverseMap();
             CreateMap<Ward, WardRequest>().ReverseMap();
             CreateMap<Province, ProvinceRequest>().ReverseMap();
@@ -56,11 +60,27 @@ namespace BusinessLogicLayer.Mappings
                 .ReverseMap();
 
             CreateMap<ProductDetail, ProductDetailDto>().ReverseMap();
+            
 
             CreateMap<BaseDiscount, Discount>()
                 .ForMember(dest => dest.Id, opt => opt.Ignore())
                 .ReverseMap();
             CreateMap<StoreDetail, StoreDetailDto>().ReverseMap();
+            CreateMap<Menu, MenuRequest>().ReverseMap();
+            CreateMap<MenuProduct, MenuProductDto>().ReverseMap();
+            CreateMap<StoreMenuProductDetail, StoreMenuProductDetailDto>().ReverseMap();
+            CreateMap<UserAddressDetail, UserAddressDetailDto>().ReverseMap();
+
+
+            CreateMap<Order, OrderRequest>().ReverseMap();
+            CreateMap<BaseOrder, Order>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore())
+                .ReverseMap();
+
+            CreateMap<OrderDetail, OrderDetailRequest>().ReverseMap();
+            CreateMap<BaseOrderDetail, OrderDetail>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore())
+                .ReverseMap();
 
         }
     }

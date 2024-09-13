@@ -19,5 +19,6 @@ namespace BusinessLogicLayerFront.ServicesInterface
 
         Task<bool> SendVerificationEmail(UserDto userDto);
         Task<bool> VerifyEmail(string token);
+        Task<UserDto> UpdateUser(UserDto userDto);
     }
 }

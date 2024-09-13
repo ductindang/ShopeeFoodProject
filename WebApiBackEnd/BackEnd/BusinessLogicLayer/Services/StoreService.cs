@@ -96,9 +96,9 @@ namespace BusinessLogicLayer.Services
             return _mapper.Map<IEnumerable<StoreRequest>>(stores);
         }
 
-        public async Task<StoreDetailDto> GetStoreWithDetailAddress(int storeId)
+        public async Task<StoreDetailDto> GetStoreWithDetailAddress(int storeId, int storeAddressId, string wardId)
         {
-            var store = await _storeRepository.GetStoreWithDetailAddress(storeId);
+            var store = await _storeRepository.GetStoreWithDetailAddress(storeId, storeAddressId, wardId);
             return _mapper.Map<StoreDetailDto>(store);
         }
 
@@ -112,6 +112,12 @@ namespace BusinessLogicLayer.Services
         {
             var stores = await _storeRepository.GetStoresBySubCategory(subCategoryId);
             return _mapper.Map<IEnumerable<StoreRequest>>(stores);
+        }
+
+        public async Task<IEnumerable<StoreMenuProductDetailDto>> GetStoreMenuProductDetails(int storeId)
+        {
+            var storeMenuProduct = await _storeRepository.GetStoreMenuProductDetails(storeId);
+            return _mapper.Map<IEnumerable<StoreMenuProductDetailDto>>(storeMenuProduct);
         }
     }
 }

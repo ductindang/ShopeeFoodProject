@@ -62,6 +62,23 @@ builder.Services.AddScoped<IGenericRepository<Discount>, GenericRepository<Disco
 builder.Services.AddScoped<IDiscountRepository, DiscountRepository>();
 builder.Services.AddScoped<IDiscountService, DiscountService>();
 
+builder.Services.AddScoped<IGenericRepository<Menu>, GenericRepository<Menu>>();
+builder.Services.AddScoped<IMenuRepository, MenuRepository>();
+builder.Services.AddScoped<IMenuService, MenuService>();
+
+builder.Services.AddScoped<IGenericRepository<UserAddress>, GenericRepository<UserAddress>>();
+builder.Services.AddScoped<IUserAddressRepository, UserAddressRepository>();
+builder.Services.AddScoped<IUserAddressService, UserAddressService>();
+
+builder.Services.AddScoped<IGenericRepository<MenuProduct>, GenericRepository<MenuProduct>>();
+
+builder.Services.AddScoped<IGenericRepository<Order>, GenericRepository<Order>>();
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+
+builder.Services.AddScoped<IGenericRepository<OrderDetail>, GenericRepository<OrderDetail>>();
+builder.Services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
+builder.Services.AddScoped<IOrderDetailService, OrderDetailService>();
 
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 

@@ -114,10 +114,10 @@ namespace WebApi.Controllers
         }
 
 
-        [HttpGet("{storeId}/AddressDetail")]
-        public async Task<IActionResult> GetStoreWithDetailAddress(int storeId)
+        [HttpGet("{storeId}/StoreAddress/{storeAddressId}/Ward/{wardId}/AddressDetail")]
+        public async Task<IActionResult> GetStoreWithDetailAddress(int storeId, int storeAddressId, string wardId)
         {
-            var store = await _storeService.GetStoreWithDetailAddress(storeId);
+            var store = await _storeService.GetStoreWithDetailAddress(storeId, storeAddressId, wardId);
             if (store == null)
             {
                 return NotFound();
@@ -129,10 +129,6 @@ namespace WebApi.Controllers
         public async Task<IActionResult> GetStoresBySubCategoryPerPage(int subCategoryId, int page, int pageSize)
         {
             var stores = await _storeService.GetStoresBySubCategoryPerPage(subCategoryId, page, pageSize);
-            //if(products == null || !products.Any())
-            //{
-            //    return NotFound();
-            //}
             return Ok(stores);
         }
 
@@ -140,13 +136,15 @@ namespace WebApi.Controllers
         public async Task<IActionResult> GetStoresBySubCategory(int subCategoryId)
         {
             var stores = await _storeService.GetStoresBySubCategory(subCategoryId);
-            //if(products == null || !products.Any())
-            //{
-            //    return NotFound();
-            //}
             return Ok(stores);
         }
 
+        [HttpGet("{storeId}/ProductDetail")]
+        public async Task<IActionResult> GetStoreMenuProductDetails(int storeId)
+        {
+            var storeMenuProduct = await _storeService.GetStoreMenuProductDetails(storeId);
+            return Ok(storeMenuProduct);
+        }
 
     }
 }

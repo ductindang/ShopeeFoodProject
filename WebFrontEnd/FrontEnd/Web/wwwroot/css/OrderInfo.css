@@ -1,0 +1,38 @@
+﻿.panel-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .panel-table th, .panel-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .panel-table th {
+        background-color: #ffffff; /* White background for header */
+        color: #333; /* Dark text color for better contrast */
+        font-weight: bold;
+    }
+
+/* Set specific widths for columns */
+.column-full-name {
+    width: 30%; /* Adjust as needed */
+}
+
+.column-address {
+    width: 50%; /* Adjust as needed */
+}
+
+.column-phone {
+    width: 20%; /* Adjust as needed */
+}
+
+/* Optional: Style for alternate rows and hover effect */
+.panel-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.panel-table tr:hover {
+    background-color: #f1f1f1;
+}

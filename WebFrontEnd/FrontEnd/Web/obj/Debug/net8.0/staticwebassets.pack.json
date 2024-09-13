@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\Image\\logoGgplay.jpg"
     },
     {
+      "Id": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\css\\CheckOut.css",
+      "PackagePath": "staticwebassets\\css\\CheckOut.css"
+    },
+    {
+      "Id": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\css\\EditAccount.css",
+      "PackagePath": "staticwebassets\\css\\EditAccount.css"
+    },
+    {
+      "Id": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\css\\OrderInfo.css",
+      "PackagePath": "staticwebassets\\css\\OrderInfo.css"
+    },
+    {
       "Id": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\css\\loadProject.css",
       "PackagePath": "staticwebassets\\css\\loadProject.css"
     },
@@ -53,12 +65,24 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\EditAccount.js",
+      "PackagePath": "staticwebassets\\js\\EditAccount.js"
+    },
+    {
+      "Id": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\OrderInfo.js",
+      "PackagePath": "staticwebassets\\js\\OrderInfo.js"
+    },
+    {
       "Id": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\StoreIndex.js",
       "PackagePath": "staticwebassets\\js\\StoreIndex.js"
     },
     {
       "Id": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\StoresBySubCategory.js",
       "PackagePath": "staticwebassets\\js\\StoresBySubCategory.js"
+    },
+    {
+      "Id": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\UpdateAccount.js",
+      "PackagePath": "staticwebassets\\js\\UpdateAccount.js"
     },
     {
       "Id": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\loadProject.js",
@@ -315,6 +339,10 @@
     {
       "Id": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\uploads\\Screenshot 2024-09-05 151611.png",
+      "PackagePath": "staticwebassets\\uploads\\Screenshot 2024-09-05 151611.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Web.Microsoft.AspNetCore.StaticWebAssets.props",

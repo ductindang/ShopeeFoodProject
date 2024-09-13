@@ -1,5 +1,6 @@
 ﻿using BusinessLogicLayerFront.DTOs;
 using BusinessLogicLayerFront.ServicesInterface;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -235,5 +236,81 @@ namespace Web.Controllers
             ViewBag.Message = "Verification email has been sent.";
             return View("VerifyEmail");
         }
+
+        public IActionResult EditAccount()
+        {
+            return View();
+        }
+
+        public IActionResult UpdateAccount()
+        {
+            // This GET action returns the partial view used for AJAX requests
+            return PartialView("UpdateAccount");
+        }
+
+        [HttpPost]
+        public IActionResult UpdateAccount(UserDto userDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                var userCheckJson = HttpContext.Session.GetString("userCheck");
+                var userCheck = JsonConvert.DeserializeObject<UserDto>(userCheckJson);
+
+                // Update user properties
+                if (!string.IsNullOrEmpty(userDto.FullName))
+                {
+                    userCheck.FullName = userDto.FullName;
+                }
+                if (!string.IsNullOrEmpty(userDto.Avatar))
+                {
+                    userCheck.Avatar = userDto.Avatar;
+                }
+                if (!string.IsNullOrEmpty(userDto.Email))
+                {
+                    userCheck.Email = userDto.Email;
+                }
+                if (!string.IsNullOrEmpty(userDto.Password))
+                {
+                    userCheck.Password = userDto.Password;
+                }
+                if (!string.IsNullOrEmpty(userDto.PhoneNumber))
+                {
+                    userCheck.PhoneNumber = userDto.PhoneNumber;
+                }
+
+                userCheck.Gender = userDto.Gender;
+
+                // Update user in the database
+                var userUpdate = _userService.UpdateUser(userCheck);
+
+                // Save updated user data to session
+                if (userUpdate != null)
+                {
+                    var newUserCheckJson = JsonConvert.SerializeObject(userCheck);
+                    HttpContext.Session.SetString("userCheck", newUserCheckJson);
+                }
+
+                // Determine if the request is AJAX
+                if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+                {
+                    // Return the updated partial view for AJAX requests
+                    return PartialView("UpdateAccount", userCheck);
+                }
+
+                // Redirect to EditAccount for non-AJAX requests after a successful update
+                return RedirectToAction("EditAccount");
+            }
+
+            // If model state is invalid, determine if the request is AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                // Return the partial view with errors for AJAX requests
+                return PartialView("UpdateAccount", userDto);
+            }
+
+            // Return the main view with the model if not AJAX
+            return View("EditAccount", userDto);
+        }
+
     }
 }

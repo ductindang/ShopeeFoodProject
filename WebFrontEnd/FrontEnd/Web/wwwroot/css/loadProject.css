@@ -1,4 +1,30 @@
 ﻿
+
+#userDropdown:hover {
+    background-color: #f8f9fa; /* Light grey background on hover */
+    cursor: pointer;
+}
+
+
+#userMenu {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px 0;
+    width: 200px;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    #userMenu li:hover {
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+
+    #userMenu i {
+        color: #333;
+    }
+
+
 footer a {
     text-decoration: none;
 }

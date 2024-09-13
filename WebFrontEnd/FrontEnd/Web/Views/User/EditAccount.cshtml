@@ -1,0 +1,61 @@
+﻿@model BusinessLogicLayerFront.DTOs.UserDto
+@using BusinessLogicLayerFront.DTOs
+@using Newtonsoft.Json
+@{
+    ViewData["Title"] = "Edit Account";
+    Layout = "~/Views/Shared/_LayoutProject.cshtml";
+}
+
+<link href="~/css/editaccount.css" rel="stylesheet" />
+
+<div class="container d-flex custom-container">
+    <div class="bg-white side-panel">
+        @{
+            var userCheckJson = Context.Session.GetString("userCheck");
+            <div class="user-info">
+                @if (!string.IsNullOrEmpty(userCheckJson))
+                {
+                    var userCheck = JsonConvert.DeserializeObject<UserDto>(userCheckJson);
+                    var avatarUrl = !string.IsNullOrEmpty(userCheck.Avatar)
+                        ? userCheck.Avatar
+                        : "https://down-bs-vn.img.susercontent.com/vn-11134523-7r98o-ltks4aztc8wad6.webp";
+
+                    <div class="user-avatar-container">
+                        <div>
+                            <img src="@avatarUrl"
+                                 alt="User Avatar"
+                                 class="user-avatar"
+                                 onclick="openModal(this)"
+                                 onerror="this.onerror=null; this.src='https://down-bs-vn.img.susercontent.com/vn-11134523-7r98o-ltks4aztc8wad6.webp';" />
+                        </div>
+                        <span class="nav-link text-dark user-fullname" title="@userCheck.FullName">@userCheck.FullName</span>
+                    </div>
+
+                    <!-- The Modal -->
+                    <div id="avatarModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <div id="imgAvatarModel" style="margin-top: 200px;">
+                            <img class="modal-content" id="modalImage">
+                            <div style="background-color: gray; margin:auto; width: 30%"><p id="caption"></p></div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        <div class="panel-link" id="accountUpdateLink" style="cursor: pointer">
+            Account update
+            <i class="fas fa-chevron-right panel-icon"></i>
+        </div>
+        <div class="panel-link" id="orderInfoLink" style="cursor: pointer">
+            Order Information
+            <i class="fas fa-chevron-right panel-icon"></i>
+        </div>
+    </div>
+
+    <div class="bg-white main-panel">
+        
+    </div>
+</div>
+<script src="~/js/editaccount.js" asp-append-version="true"></script>
+
+

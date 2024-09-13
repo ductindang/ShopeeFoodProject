@@ -20,149 +20,160 @@
 
 
 <div class="banner">
-    <div class="container left-info">
-        <h3>Order @Model.Name, deliverry from 20'...</h3>
-        <p>From 87120 places in @province.Name @province.Type from 00:00 - 23:59</p>
-        <div class="input-group search-bar" >
-            <input type="text" id="search-input" placeholder="Find places, item, address" />
-            <i class="btn-search bi bi-search" style=""></i>
-            <div id="store-container" style="background-color: white; color: black;  position: absolute; width: calc(80% + 55px); top: 80px; margin-left: 3px; z-index: 2; box-sizing:border-box; border-radius: 5px">
-                
+    @* <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1000;"></div> *@
+    <div class="sub-banner">
+        <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(10, 100, 100, 0.6); z-index: 1000;">
+            <div id="loading-store-spinner" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: red;">
+                <!-- Dual Ring Spinner -->
+                <div class="spinner-wave">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
         </div>
 
-        
+        <div class="container left-info">
+            <h3>Order @Model.Name, deliverry from 20'...</h3>
+            <p>From 87120 places in @province.Name @province.Type from 00:00 - 23:59</p>
+            <div class="input-group search-bar">
+                <input type="text" id="search-input" placeholder="Find places, item, address" />
+                <i class="btn-search bi bi-search" style=""></i>
+                <div id="store-container" style="background-color: white; color: black;  position: absolute; width: calc(80% + 55px); top: 80px; margin-left: 3px; z-index: 2; box-sizing:border-box; border-radius: 5px">
+                </div>
+            </div>
 
-        <div class="input-group sub-category-container" style="">
-            @if (ViewData["subCates"] is List<SubCategoryDto> subCates && subCates.Any())
-            {
-                @foreach (var subCate in subCates)
+
+
+            <div class="input-group sub-category-container" style="">
+                @if (ViewData["subCates"] is List<SubCategoryDto> subCates && subCates.Any())
                 {
-            @* / Product / ProductsBySubCategory /? subCategoryId = @subCate.Id *@
-                    <a asp-action="StoresBySubCategory" asp-controller="Store" asp-route-subCategoryId="@subCate.Id" style="text-decoration: none">
-                        <div class="sub-category" id="sub-category" style="">
-                            <span style="color: white">@subCate.Name</span>
-                        </div>
-                    </a>
-                    
+                    @foreach (var subCate in subCates)
+                    {
+                        @* / Product / ProductsBySubCategory /? subCategoryId = @subCate.Id *@
+                        <a asp-action="StoresBySubCategory" asp-controller="Store" asp-route-subCategoryId="@subCate.Id" style="text-decoration: none">
+                            <div class="sub-category" id="sub-category" style="">
+                                <span style="color: white">@subCate.Name</span>
+                            </div>
+                        </a>
+
+                    }
                 }
-            }
+            </div>
+            <p style="font-size: 20px">Better experiences with ShopeeFood App</p>
+
+            <a href="#"><img class="logo-appstore" style="" src="~/image/logoappstore.png" title="App store" /></a>
+            <a href="#"><img class="logo-ggplay" style="" src="~/image/logoggplay.jpg" title="Google play" /></a>
+
         </div>
-        <p style="font-size: 20px">Better experiences with ShopeeFood App</p>
-
-        <a href="#"><img class="logo-appstore" style="" src="~/image/logoappstore.png" title="App store" /></a>
-        <a href="#"><img class="logo-ggplay" style="" src="~/image/logoggplay.jpg" title="Google play"/></a>
-
-    </div>
-    <div class="right-info" style="flex: 1">
-        <div class="custom-scroll" style=" ">
-        @* <div class="custom-scroll" style="overflow-y: auto;"> *@
-            <div class="select-delivery" style="">
-                <a style="" onclick="choose()">
-                    <strong style="color: #0288d1">Food </strong>
-                    <i class="bi bi-arrow-right-short" style="font-size: 20px; color: black"> </i> <span style="color: black">Selected delivery address</span>
-                </a>
-            </div>
-
-
-            <div class="bg-white list-deal" style="">
-                <div  style="">
-                    <h4 style="color: black">Deal</h4>
-                    <a asp-action="Index" asp-controller="Store" style="">
-                        <span class="icon-list-deal">
-                            <span class="square"></span>
-                            <span class="square"></span>
-                            <span class="square"></span>
-                            <span class="square"></span>
-                        </span>
-                        View all
+        <div class="right-info" style="flex: 1">
+            
+            <div class="custom-scroll" style=" ">
+                @* <div class="custom-scroll" style="overflow-y: auto;"> *@
+                <div class="select-delivery" style="">
+                    <a style="" onclick="choose()">
+                        <strong style="color: #0288d1">Food </strong>
+                        <i class="bi bi-arrow-right-short" style="font-size: 20px; color: black"> </i> <span style="color: black">Selected delivery address</span>
                     </a>
                 </div>
 
-                <div class="sub-list-deal" style="">
-                    @* <div style="border: 1px solid gray; width: 30%; border-radius: 10px">
-                        <img style="width: 100%; border-radius: 10px 10px 0 0" src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lstys79d6hsp9b@resize_ss280x175!" />
-                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Texas Chicken - Hoang Van Thu"><strong>Texas Chicken - Hoang Van Thu</strong></div>
-                        <div class="address-res" style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM">392 - 394 Hoàng Văn Thụ, Tân Bình, TP. HCM</div>
-                        <hr style="color: black" />
-                        <div style="color:#187caa; font-weight: bold; margin: -10px 0 10px 10px; font-size: 15px"><i class="fas fa-tag" style="color: red !important; margin-right: 3px"></i> Item discount</div>
-                    </div>*@
-                </div>
-                <div style="text-align: center"><button style="">Load more <i class="bi bi-arrow-clockwise"></i></button></div>
-            </div>
 
+                <div class="bg-white list-deal" style="">
+                    <div style="">
+                        <h4 style="color: black">Deal</h4>
+                        <a asp-action="Index" asp-controller="Store" style="">
+                            <span class="icon-list-deal">
+                                <span class="square"></span>
+                                <span class="square"></span>
+                                <span class="square"></span>
+                                <span class="square"></span>
+                            </span>
+                            View all
+                        </a>
+                    </div>
 
-            <div class="bg-white featured-product" style="margin-top: 20px; padding: 20px; border-radius: 10px">
-                <div style="display: flex; justify-content: space-between">
-                    <h4 style="color: black">Collections</h4>
-                    <a href="#" style="color: lightseagreen; text-decoration: none;">
-                        <span class="icon-list-deal">
-                            <span class="square"></span>
-                            <span class="square"></span>
-                            <span class="square"></span>
-                            <span class="square"></span>
-                        </span>
-                        View all
-                    </a>
+                    
+
+                    <div class="sub-list-deal" style="">
+                    </div>
+                    <div style="text-align: center"><button style="">Load more <i class="bi bi-arrow-clockwise"></i></button></div>
                 </div>
 
-                <div id="discount-container" style="display: flex; box-sizing: border-box; flex-wrap: wrap; gap: 10px; justify-content: space-between">
-                    @* <div style="width: 30%;">
+
+                @* <div class="bg-white featured-product" style="margin-top: 20px; padding: 20px; border-radius: 10px">
+                    <div style="display: flex; justify-content: space-between">
+                        <h4 style="color: black">Collections</h4>
+                        <a href="#" style="color: lightseagreen; text-decoration: none;">
+                            <span class="icon-list-deal">
+                                <span class="square"></span>
+                                <span class="square"></span>
+                                <span class="square"></span>
+                                <span class="square"></span>
+                            </span>
+                            View all
+                        </a>
+                    </div>
+
+                    <div id="discount-container" style="display: flex; box-sizing: border-box; flex-wrap: wrap; gap: 10px; justify-content: space-between">
+                        <div style="width: 30%;">
                         <img style="width: 100%; border-radius: 10px" src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-ly4kirq58gjn65@resize_ss320x320!" />
                         <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Million good foods, just 0VND"><strong>Million good foods, just 0VND</strong></div>
                         <div class="" style="color: #0288d1; font-size: 13px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="200 locations">200 locations</div>
-                    </div> *@
-                </div>
-            </div>
-
-            <div class="bg-white" style="margin-top: 20px; padding: 20px; border-radius: 10px">
-                <div style="display: flex; justify-content: space-between; padding: 20px">
-                    @* <button style="background-color: transparent; border: none"><span>Near</span></button>
-                    <button style="background-color: transparent; border: none"><span>Top</span></button>
-                    <button style="background-color: transparent; border: none"><span>Recent</span></button> *@
-                    <button style="background-color: transparent; border: none"><span>Featured</span></button>
-                    <select id="district-select" style="padding: 5px; border: 1px solid #d7d7d7; border-radius: 4px">
-                        @* <option value="-1">Choose District</option> *@
-                        @{
-                            if (districts != null && districts.Any())
-                            {
-                                foreach (var district in districts)
-                                {
-                                    <option value="@district.Id">@district.Name</option>
-                                }
-                            }
-                        }
-                    </select>
-
-                </div>
-
-                @* <div style="display: flex; padding: 20px; gap: 20px">
-                    <div style="">
-                        <img style="width: 144px;" src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsvep19m04hwc0@resize_ss280x175!" />
-                    </div>
-                    <div style="">
-                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis"><strong>Pho Bay Cu - Beef Pho & Chicken Pho - Ho Hoc Lam</strong></div>
-                        <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">397 Ho Hoc Lam, An Lac Ward, Binh Tan District, HCM City </div>
-                        <div style="color: black">
-                            <span><i class="bi bi-tags"></i></span>
-                            <span>Minimum 20k</span>
-                            <span><i class="bi bi-coin"></i></span>
-                            <span>Price 37k</span>
                         </div>
                     </div>
                 </div> *@
 
-                <div id="store-by-district-container" style="display: flex; box-sizing: border-box; flex-wrap: wrap; gap: 10px; justify-content: space-between, width: 80%">
-                    <!-- Products will be dynamically inserted here -->
-                </div>
+                <div class="bg-white" style="margin-top: 20px; padding: 20px; border-radius: 10px">
+                    <div style="display: flex; justify-content: space-between; padding: 20px">
+                        @* <button style="background-color: transparent; border: none"><span>Near</span></button>
+                        <button style="background-color: transparent; border: none"><span>Top</span></button>
+                        <button style="background-color: transparent; border: none"><span>Recent</span></button> *@
+                        <button style="background-color: transparent; border: none"><span>Featured</span></button>
+                        <select id="district-select" style="padding: 5px; border: 1px solid #d7d7d7; border-radius: 4px">
+                            @* <option value="-1">Choose District</option> *@
+                            @{
+                                if (districts != null && districts.Any())
+                                {
+                                    foreach (var district in districts)
+                                    {
+                                        <option value="@district.Id">@district.Name</option>
+                                    }
+                                }
+                            }
+                        </select>
 
-                
+                    </div>
 
-                @* <div style="text-align: center"><button style=" color: #0288d1; background-color: transparent; border: none">Load more <i class="bi bi-arrow-clockwise"></i></button></div> *@
-                <div style="text-align: center">
-                    <button class="load-more-district-button" style="color: #0288d1; background-color: transparent; border: none">
-                        Load more <i class="bi bi-arrow-clockwise"></i>
-                    </button>
+                    @* <div style="display: flex; padding: 20px; gap: 20px">
+                    <div style="">
+                    <img style="width: 144px;" src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsvep19m04hwc0@resize_ss280x175!" />
+                    </div>
+                    <div style="">
+                    <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis"><strong>Pho Bay Cu - Beef Pho & Chicken Pho - Ho Hoc Lam</strong></div>
+                    <div style="color: black; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">397 Ho Hoc Lam, An Lac Ward, Binh Tan District, HCM City </div>
+                    <div style="color: black">
+                    <span><i class="bi bi-tags"></i></span>
+                    <span>Minimum 20k</span>
+                    <span><i class="bi bi-coin"></i></span>
+                    <span>Price 37k</span>
+                    </div>
+                    </div>
+                    </div> *@
+
+                    <div id="store-by-district-container" style="display: flex; box-sizing: border-box; flex-wrap: wrap; gap: 10px; justify-content: space-between, width: 80%">
+                        <!-- Products will be dynamically inserted here -->
+                    </div>
+
+
+
+                    @* <div style="text-align: center"><button style=" color: #0288d1; background-color: transparent; border: none">Load more <i class="bi bi-arrow-clockwise"></i></button></div> *@
+                    <div style="width: 100%; display: flex; justify-content: center">
+                        <button class="load-more-district-button" style="color: #0288d1; background-color: transparent; border: none">
+                            Load more <i class="bi bi-arrow-clockwise"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -170,8 +181,7 @@
 </div>
 
 
-
-<div class="order-protection container" style="" >
+<div class="order-protection container" style="">
     <div style="">
         <p><strong>How about your purchase order protection?</strong></p>
         <p>ShopeeFood will protect your purchase order from the weather by using bag or box during shipping.</p>
@@ -180,7 +190,7 @@
 </div>
 
 <div class="shopee-partner container" style="">
-    <div  style="">
+    <div style="">
         <div>
             <p><strong>Shopee Partner App</strong></p>
             <p><strong>- Shopee Partner App</strong> is an order management application for partner restaurants of on-site ordering service</p>

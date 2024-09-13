@@ -1,9 +1,4 @@
-﻿using DataAccessLayer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BusinessLogicLayer.Requests;
 
 namespace BusinessLogicLayer.BaseRequests
 {
@@ -21,6 +16,7 @@ namespace BusinessLogicLayer.BaseRequests
         public double Price { get; set; }
         public string? Image { get; set; }
         public string? Description { get; set; }
-        public virtual Discount? Discount { get; set; }
+        //public virtual DiscountRequest? Discount { get; set; }
+        public int Quantity { get; set; }
     }
 }

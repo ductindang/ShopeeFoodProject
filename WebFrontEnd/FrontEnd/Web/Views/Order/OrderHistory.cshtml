@@ -1,0 +1,184 @@
+﻿@model IEnumerable<BusinessLogicLayerFront.DTOs.OrderDto>
+
+@{
+    ViewData["Title"] = "Order History";
+    Layout = "~/Views/Shared/_LayoutProject.cshtml";
+}
+<link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet">
+<style>
+    .col-md-6 .active {
+        font-weight: 300;
+    }
+
+    .modal-content {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .modal-dialog.custom-modal {
+        max-width: 90%;
+        width: 90%;
+    }
+
+    /* Styling for the search button */
+    .search-btn {
+        color: white;
+        background-color: #0288d1;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 15px;
+        cursor: pointer;
+    }
+
+        .search-btn:hover {
+            background-color: #0277bd;
+            transform: scale(1.05);
+        }
+
+        .search-btn:active {
+            background-color: #01579b;
+        }
+
+    .filter-container {
+        gap: 20px;
+        padding: 20px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+        .filter-container label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .filter-container select,
+        .filter-container input {
+            width: 100%;
+        }
+
+    .table-responsive {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .modal-content {
+        border-radius: 8px;
+    }
+</style>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Order History</h1>
+
+    <div class="bg-white p-3 mb-3 rounded shadow-sm d-flex" style="gap: 30px; padding: 20px 50px !important">
+        <!-- Status Filter -->
+        <div class="d-flex mb-2" style="flex-direction: column; flex: 1">
+            <label class="me-2">Status:</label>
+            <select id="statusFilter" class="form-select w-auto">
+                <option value="-1">All</option>
+                <option value="0">Pending</option>
+                <option value="1">Complete</option>
+            </select>
+        </div>
+
+        <!-- From Date Filter -->
+        <div style="flex: 1">
+            <label>From Date:</label>
+            <input id="fromDate" type="date" class="form-control" placeholder="Select From Date" />
+        </div>
+
+        <!-- To Date Filter -->
+        <div style="flex: 1">
+            <label>To Date:</label>
+            <input id="toDate" type="date" class="form-control" placeholder="Select To Date" />
+        </div>
+
+        <!-- Search Button -->
+        <div style="align-self: center; padding-top: 15px;">
+            <button id="searchButton" class="search-btn">Search</button>
+        </div>
+    </div>
+
+    <!-- Table for displaying orders -->
+    <div class="table-responsive bg-white p-3 rounded shadow-sm">
+        <table class="table table-striped">
+            <thead>
+                <tr style="color: red; font-size: 14px; border: hidden">
+                    <th>STT</th>
+                    <th>Recipient Name</th>
+                    <th>Place</th>
+                    <th>Order Date</th>
+                    <th>Total Money</th>
+                    <th>Status</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody id="orderTableBody">
+                @Html.Partial("_OrderTableRows", Model)
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Modal for order details -->
+<div class="modal fade" id="orderDetailModal" tabindex="-1" aria-labelledby="orderDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog custom-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orderDetailModalLabel">Order Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="modalContent">Loading...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+
+    // Function to fetch and update the orders table based on search criteria
+    document.getElementById('searchButton').addEventListener('click', function () {
+        var status = document.getElementById('statusFilter').value;
+        var fromDate = document.getElementById('fromDate').value;
+        var toDate = document.getElementById('toDate').value;
+
+        fetch(`/Order/Search?status=${status}&fromDate=${fromDate}&toDate=${toDate}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+            .then(response => response.text())
+            .then(data => {
+                // Update the table body with the filtered data
+                document.getElementById('orderTableBody').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error fetching order data:', error);
+            });
+    });
+
+    // Function to open the order detail modal
+    function openDetailModal(element) {
+        var orderId = element.getAttribute('data-id');
+        var modal = new bootstrap.Modal(document.getElementById('orderDetailModal'));
+
+        // Load order details via AJAX
+        fetch(`/Order/Details?orderId=${orderId}`)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('modalContent').innerHTML = data;
+                modal.show();
+            })
+            .catch(error => {
+                document.getElementById('modalContent').innerHTML = '<p>Error loading details.</p>';
+            });
+    }
+</script>

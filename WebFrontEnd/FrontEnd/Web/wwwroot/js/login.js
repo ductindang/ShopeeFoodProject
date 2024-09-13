@@ -14,8 +14,8 @@ $(document).ready(function () {
     });
 });
 
-function reloadLoginPage() {
-    event.preventDefault();
+function reloadLoginPage(event) {
+    //event.preventDefault(); // Prevent the default form submission
 
     $.ajax({
         type: 'POST',
@@ -26,10 +26,53 @@ function reloadLoginPage() {
         },
         success: function (response) {
             if (response.success) {
-                window.location.href = response.redirectUrl;
+                // Check if there's a saved redirect URL
+                var redirectUrl = localStorage.getItem('cartRedirect');
+                if (redirectUrl) {
+                    // Remove the redirect URL from localStorage
+                    localStorage.removeItem('cartRedirect');
+                    // Redirect to the saved URL
+                    window.location.href = redirectUrl;
+                } else {
+                    // No saved URL, redirect to homepage or another default page
+                    window.location.href = "https://localhost:7059/";
+                }
             } else {
+                // Show error message if login fails
                 $('#error-message').text(response.message);
             }
         },
     });
 }
+
+
+
+document.getElementById('login-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    var rememberMe = document.getElementById('rememberMe').checked;
+
+    var data = {
+        Email: email,
+        Password: password,
+        RememberMe: rememberMe
+    };
+
+    fetch('/User/Login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+        .then(response => response.json())
+        .then(result => {
+            if (result.success) {
+                window.location.href = result.redirectUrl;
+            } else {
+                document.getElementById('error-message').innerText = result.message;
+            }
+        });
+});

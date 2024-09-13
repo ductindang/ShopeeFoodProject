@@ -1,94 +1,84 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\",
+  "WorkspaceRootPath": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\webapi\\controllers\\subcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\subcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\webapi\\controllers\\districtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\districtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\inetpub\\wwwroot\\RestApi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\webapi\\controllers\\provincecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\provincecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|solutionrelative:webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\businesslogiclayer\\services\\districtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\districtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\businesslogiclayer\\servicesinterface\\idistrictservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\servicesinterface\\idistrictservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\webapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\dataaccesslayer\\repositories\\provincerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\provincerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\dataaccesslayer\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\webapi\\controllers\\storeaddresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\storeaddresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\dataaccesslayer\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\webapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\dataaccesslayer\\repositoriesinterface\\iprovincerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositoriesinterface\\iprovincerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\inetpub\\wwwroot\\RestApi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\dataaccesslayer\\repositoriesinterface\\istorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\webapi\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\businesslogiclayer\\baserequests\\baseorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\baserequests\\baseorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\businesslogiclayer\\baserequests\\baseorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\baserequests\\baseorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\dataaccesslayer\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\businesslogiclayer\\services\\orderdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\orderdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\businesslogiclayer\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\dataaccesslayer\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\dataaccesslayer\\repositoriesinterface\\iorderdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositoriesinterface\\iorderdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\dataaccesslayer\\repositories\\orderdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\orderdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|d:\\ddt\\home\\fixstructure\\webapibackend\\backend\\dataaccesslayer\\repositoriesinterface\\istorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositoriesinterface\\istorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\dataaccesslayer\\models\\storedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\models\\storedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\dataaccesslayer\\models\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\models\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\businesslogiclayer\\baserequests\\basestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\baserequests\\basestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\dataaccesslayer\\repositories\\storerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\storerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\businesslogiclayer\\services\\storeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\storeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\businesslogiclayer\\servicesinterface\\istoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\servicesinterface\\istoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\businesslogiclayer\\dtos\\storedetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dtos\\storedetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\webapi\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A25AC34-B524-492D-BF4D-A6B5AC246C7A}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\businesslogiclayer\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\businesslogiclayer\\servicesinterface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A530D7C2-D49E-4344-B840-3527570DF26A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\servicesinterface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\dataaccesslayer\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|f:\\c#\\company\\clonehome\\fixstructure\\webapibackend\\backend\\dataaccesslayer\\repositoriesinterface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18E78AE0-10D1-497D-AB8A-0AC5BB83294C}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositoriesinterface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -97,8 +87,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 3726,
-          "SelectedChildIndex": 12,
+          "DockedWidth": 1444,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -107,275 +97,264 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ProvinceRepository.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Repositories\\ProvinceRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\ProvinceRepository.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Repositories\\ProvinceRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Repositories\\ProvinceRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAzAAAA",
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T06:55:11.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IProvinceRepository.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\RepositoriesInterface\\IProvinceRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\RepositoriesInterface\\IProvinceRepository.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\RepositoriesInterface\\IProvinceRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\RepositoriesInterface\\IProvinceRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T06:55:06.202Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "BaseStore.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\BaseRequests\\BaseStore.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\BaseRequests\\BaseStore.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\BaseRequests\\BaseStore.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\BaseRequests\\BaseStore.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T06:48:58.727Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Store.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Models\\Store.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Models\\Store.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Models\\Store.cs",
-              "RelativeToolTip": "DataAccessLayer\\Models\\Store.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T06:48:41.135Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "StoreDetail.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Models\\StoreDetail.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Models\\StoreDetail.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Models\\StoreDetail.cs",
-              "RelativeToolTip": "DataAccessLayer\\Models\\StoreDetail.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T06:47:51.176Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "StoreDetailDto.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\DTOs\\StoreDetailDto.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\DTOs\\StoreDetailDto.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\DTOs\\StoreDetailDto.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\DTOs\\StoreDetailDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T06:31:47.445Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "StoreController.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\StoreController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\StoreController.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\StoreController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\StoreController.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAuwH4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T05:21:40.7Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "StoreService.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\Services\\StoreService.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\StoreService.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\Services\\StoreService.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Services\\StoreService.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAowHAAAABWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T05:19:23.695Z"
+              "WhenOpened": "2024-09-11T14:39:13.804Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "IStoreService.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\ServicesInterface\\IStoreService.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\ServicesInterface\\IStoreService.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\ServicesInterface\\IStoreService.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\ServicesInterface\\IStoreService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAIAAAA",
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\OrderService.cs",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\Services\\OrderService.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Services\\OrderService.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAIwC4AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T05:19:26.863Z"
+              "WhenOpened": "2024-09-11T14:35:48.021Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "StoreRepository.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Repositories\\StoreRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\StoreRepository.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Repositories\\StoreRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Repositories\\StoreRepository.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAADwvzkAAABEAAAA",
+              "DocumentIndex": 16,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\OrderRepository.cs",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\OrderRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T05:15:24.593Z"
+              "WhenOpened": "2024-09-11T14:33:40.314Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "IStoreRepository.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\RepositoriesInterface\\IStoreRepository.cs",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\RepositoriesInterface\\IStoreRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\RepositoriesInterface\\IStoreRepository.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\RepositoriesInterface\\IStoreRepository.cs",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\RepositoriesInterface\\IStoreRepository.cs",
               "RelativeToolTip": "DataAccessLayer\\RepositoriesInterface\\IStoreRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T05:15:06.313Z"
+              "WhenOpened": "2024-09-10T05:04:03.367Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProvinceController.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\ProvinceController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\ProvinceController.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\ProvinceController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\ProvinceController.cs",
-              "ViewState": "AQIAAAMBAAAAAAAAAAAAwBQBAAANAAAA",
+              "DocumentIndex": 0,
+              "Title": "SubCategoryController.cs",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\SubCategoryController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\SubCategoryController.cs",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\SubCategoryController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\SubCategoryController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCgAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T06:55:23.771Z",
+              "WhenOpened": "2024-09-13T04:15:41.877Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 309,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 1838,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "DataAccessLayer\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAABAAAAAAAAAAAgwBYAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T04:10:42.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "DataAccessLayer\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T04:10:34.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\appsettings.json",
-              "RelativeDocumentMoniker": "WebApi\\appsettings.json",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\appsettings.json",
-              "RelativeToolTip": "WebApi\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAUAAAA",
+              "DocumentMoniker": "C:\\inetpub\\wwwroot\\RestApi\\appsettings.json",
+              "ToolTip": "C:\\inetpub\\wwwroot\\RestApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-27T13:14:55.144Z",
+              "WhenOpened": "2024-09-13T04:02:21.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "web.config",
+              "DocumentMoniker": "C:\\inetpub\\wwwroot\\RestApi\\web.config",
+              "ToolTip": "C:\\inetpub\\wwwroot\\RestApi\\web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-09-13T03:29:14.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T02:18:02.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BaseOrder.cs",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\BaseRequests\\BaseOrder.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\BaseRequests\\BaseOrder.cs",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\BaseRequests\\BaseOrder.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\BaseRequests\\BaseOrder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T02:22:21.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApi\\appsettings.json",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\appsettings.json",
+              "RelativeToolTip": "WebApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-12T01:55:03.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "WebApi\\Program.cs",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Program.cs",
+              "RelativeToolTip": "WebApi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T01:54:51.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DistrictService.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\Services\\DistrictService.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\DistrictService.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\Services\\DistrictService.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Services\\DistrictService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T07:26:02.819Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IDistrictService.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\ServicesInterface\\IDistrictService.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\ServicesInterface\\IDistrictService.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\ServicesInterface\\IDistrictService.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\ServicesInterface\\IDistrictService.cs",
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "WebApi\\appsettings.Development.json",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\appsettings.Development.json",
+              "RelativeToolTip": "WebApi\\appsettings.Development.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T07:26:00.478Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DistrictController.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\DistrictController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\DistrictController.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\DistrictController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\DistrictController.cs",
-              "ViewState": "AQIAAIkAAAAAAAAAAAAmwJMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T07:25:38.346Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-12T01:54:44.532Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "StoreAddressController.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\StoreAddressController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\StoreAddressController.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\StoreAddressController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\StoreAddressController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 11,
+              "Title": "BaseOrderDetail.cs",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\BaseRequests\\BaseOrderDetail.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\BaseRequests\\BaseOrderDetail.cs",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\BaseRequests\\BaseOrderDetail.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\BaseRequests\\BaseOrderDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T06:55:23.034Z"
+              "WhenOpened": "2024-09-11T15:49:40.085Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\ProductController.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAALAAAAAAAAAAAAAUwMcAAAAPAAAA",
+              "DocumentIndex": 13,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Models\\OrderDetail.cs",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "DataAccessLayer\\Models\\OrderDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T05:21:36.252Z"
+              "WhenOpened": "2024-09-11T14:42:30.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderDetailController.cs",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\OrderDetailController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\OrderDetailController.cs",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\WebApi\\Controllers\\OrderDetailController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\OrderDetailController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowCgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T14:39:03.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrderDetailService.cs",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\Services\\OrderDetailService.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\OrderDetailService.cs",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\Services\\OrderDetailService.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Services\\OrderDetailService.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwDUAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T14:35:42.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IOrderDetailRepository.cs",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\RepositoriesInterface\\IOrderDetailRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\RepositoriesInterface\\IOrderDetailRepository.cs",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\RepositoriesInterface\\IOrderDetailRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\RepositoriesInterface\\IOrderDetailRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T14:35:11.548Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\ProductService.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\Services\\ProductService.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Services\\ProductService.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAUwHsAAAAIAAAA",
+              "Title": "OrderDetailRepository.cs",
+              "DocumentMoniker": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Repositories\\OrderDetailRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\OrderDetailRepository.cs",
+              "ToolTip": "D:\\DDT\\Home\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Repositories\\OrderDetailRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\OrderDetailRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T05:19:14.817Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\ServicesInterface\\IProductService.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\ServicesInterface\\IProductService.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\BusinessLogicLayer\\ServicesInterface\\IProductService.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\ServicesInterface\\IProductService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T05:19:18.03Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\ProductRepository.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Repositories\\ProductRepository.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAuwIYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T05:15:02.193Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IProductRepository.cs",
-              "DocumentMoniker": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\RepositoriesInterface\\IProductRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\RepositoriesInterface\\IProductRepository.cs",
-              "ToolTip": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebApiBackEnd\\BackEnd\\DataAccessLayer\\RepositoriesInterface\\IProductRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\RepositoriesInterface\\IProductRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T05:15:21.917Z"
+              "WhenOpened": "2024-09-11T14:33:23.09Z",
+              "EditorCaption": ""
             }
           ]
         }

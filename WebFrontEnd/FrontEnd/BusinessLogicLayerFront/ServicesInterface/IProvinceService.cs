@@ -12,6 +12,6 @@ namespace BusinessLogicLayerFront.ServicesInterface
         Task<IEnumerable<ProvinceDto>> GetAllProvinces();
         Task<ProvinceDto> GetProvinceById(string id);
         Task<IEnumerable<ProductDto>> GetProductsByProvince(string provinceId);
-        Task<IEnumerable<StoreDto>> GetStoresByProvince(string provinceId);
+        Task<IEnumerable<StoreAddressDto>> GetStoreAddressesByProvince(string provinceId);
     }
 }

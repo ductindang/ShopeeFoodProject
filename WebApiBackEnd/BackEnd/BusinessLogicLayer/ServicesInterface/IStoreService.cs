@@ -14,9 +14,9 @@ namespace BusinessLogicLayer.ServicesInterface
         //public Task<IEnumerable<StoreDto>> GetAllStoresByWardId(string wardId);
         Task<IEnumerable<StoreRequest>> GetStoresByCategoryId(int categoryId);
         Task<IEnumerable<StoreRequest>> GetStoresByName(string name);
-        Task<StoreDetailDto> GetStoreWithDetailAddress(int storeId);
+        Task<StoreDetailDto> GetStoreWithDetailAddress(int storeId, int storeAddressId, string wardId);
         Task<IEnumerable<StoreRequest>> GetStoresBySubCategoryPerPage(int subCategoryId, int page, int pageSize);
         Task<IEnumerable<StoreRequest>> GetStoresBySubCategory(int subCategoryId);
-
+        Task<IEnumerable<StoreMenuProductDetailDto>> GetStoreMenuProductDetails(int storeId);
     }
 }

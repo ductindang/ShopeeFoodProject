@@ -1,0 +1,60 @@
+﻿@using BusinessLogicLayerFront.DTOs
+@using Newtonsoft.Json
+@model BusinessLogicLayerFront.DTOs.CheckoutViewModel
+@{
+    var userAddressDetailsJson = Context.Session.GetString("userAddressDetail");
+    // var userAddressDetails = JsonConvert.DeserializeObject<IEnumerable<UserAddressDetailDto>>(userAddressDetailsJson);
+}
+
+<h3>Shipping Address</h3>
+<div>
+    <select id="address-select" onchange="ChangeAddress()">
+        <option value="-1">Choose province/city</option>
+        @{
+            if (!string.IsNullOrEmpty(userAddressDetailsJson))
+            {
+                var userAddress = JsonConvert.DeserializeObject<List<UserAddressDetailDto>>(userAddressDetailsJson);
+
+                foreach (var userAdd in userAddress)
+                {
+                        <option value="@userAdd.UserAddressId"
+                                data-name="@userAdd.NameReminiscent"
+                                data-address="@userAdd.StreetName, @userAdd.WardName, @userAdd.DistrictName, @userAdd.ProvinceName"
+                                data-phone="@userAdd.PhoneNumber"
+                                data-id="@userAdd.UserAddressId"
+                                title="@userAdd.StreetName, @userAdd.WardName, @userAdd.DistrictName, @userAdd.ProvinceName">
+                            @userAdd.StreetName, @userAdd.WardName, @userAdd.DistrictName, @userAdd.ProvinceName
+                        </option>
+                }
+            }
+        }
+    </select>
+    <span id="address-error" class="text-danger"></span>
+</div>
+<div class="address-content">
+
+    <p><strong>Receiver:</strong> <span id="name-info"></span></p>
+    <p><strong>Address:</strong> <span id="address-info"></span></p>
+    <p><strong>Phone:</strong> <span id="phone-info"></span></p>
+</div>
+
+
+<h3>Order Summary</h3>
+<div id="checkout-items-container">
+    @foreach (var item in Model.Items)
+    {
+        var itemTotal = item.Price * item.Quantity;
+        <div class="cart-item" style="justify-content: around-between; margin-bottom: 15px; align-items: center; padding-bottom: 10px; border-bottom: 1px solid #ddd; display:flex;">
+            <div style="font-size: 16px;  margin-right: auto">@item.Name</div>
+            <span style="font-size: 16px; float: right">@item.Quantity x @item.Price.ToString("C0", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"))</span>
+            <span style="font-size: 16px; margin-left: 20px;float: right">@itemTotal.ToString("C0", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"))</span>
+        </div>
+    }
+</div>
+<div style="border-top: 1px solid #ddd; padding-top: 20px; margin-top: 20px;">
+    <div style="display: flex; justify-content: space-between; font-size: 18px;">
+        <strong>Total:</strong>
+        <strong>@Model.Items.Sum(item => item.Price * item.Quantity).ToString("C0", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"))</strong>
+    </div>
+</div>
+

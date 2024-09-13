@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('reset-password-form').addEventListener('submit', function (event) {
         const newPassword = document.getElementById('NewPassword').value;
         const confirmPassword = document.getElementById('ConfirmPassword').value;
-        const errorElement = document.getElementById('password-error');
+        const errorElement = document.getElementById('password-confirm-error');
 
         if (newPassword !== confirmPassword) {
             errorElement.textContent = 'Passwords do not match.';
@@ -28,4 +28,9 @@ document.addEventListener('DOMContentLoaded', function () {
             errorElement.textContent = '';
         }
     });
+
+
+    
 });
+
+

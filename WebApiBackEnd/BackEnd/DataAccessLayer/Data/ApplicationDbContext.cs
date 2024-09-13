@@ -14,6 +14,17 @@ namespace DataAccessLayer.Data
         {
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<MenuProduct>()
+                .HasKey(mp => new { mp.MenuId, mp.ProductId });
+
+            modelBuilder.Entity<MenuProduct>()
+                .ToTable("Product_Menu");
+
+            // Other configurations...
+        }
+
         public DbSet<User> Users { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
@@ -24,5 +35,10 @@ namespace DataAccessLayer.Data
         public DbSet<Province> Provinces { get; set; }
         public DbSet<District> Districts { get; set; }
         public DbSet<Discount> Discounts { get; set; }
+        public DbSet<Menu> Menus {  get; set; }
+        public DbSet<MenuProduct> MenuProducts { get; set; }
+        public DbSet<UserAddress> UserAddresses { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
     }
 }

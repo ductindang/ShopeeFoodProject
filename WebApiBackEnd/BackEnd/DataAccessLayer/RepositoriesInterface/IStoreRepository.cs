@@ -11,8 +11,9 @@ namespace DataAccessLayer.RepositoriesInterface
     {
         Task<IEnumerable<Store>> GetStoresByCategoryId(int categoryId);
         Task<IEnumerable<Store>> GetStoresByName(string name);
-        Task<StoreDetail> GetStoreWithDetailAddress(int storeId);
+        Task<StoreDetail> GetStoreWithDetailAddress(int storeId, int storeAddressId, string wardId);
         Task<IEnumerable<Store>> GetStoresBySubCategoryPerPage(int subCategoryId, int page, int pageSize);
         Task<IEnumerable<Store>> GetStoresBySubCategory(int subCategoryId);
+        Task<IEnumerable<StoreMenuProductDetail>> GetStoreMenuProductDetails(int storeId);
     }
 }
