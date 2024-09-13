@@ -1,9 +1,29 @@
 ﻿@{
-    ViewData["Title"] = "Verify Email";
+    ViewBag.Title = "Email Verification";
+    Layout = "~/Views/Shared/_LayoutProject.cshtml";
 }
 
-<div class="container">
-    <h1>Email Verification</h1>
-    <p>Your email address is not verified. Please check your email for a verification link.</p>
-    <p>If you did not receive the verification email, you can <a asp-action="ResendVerificationEmail" asp-controller="User">request a new one here</a>.</p>
+<div class="email-verification-container">
+    <h2>Email Verification</h2>
+
+    <div class="alert alert-info">
+        @ViewBag.Message
+    </div>
 </div>
+
+<style>
+    .email-verification-container {
+        margin: 20px auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .alert {
+        font-size: 16px;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: #e7f0ff;
+        color: #004085;
+        border: 1px solid #b6d4fe;
+    }
+</style>

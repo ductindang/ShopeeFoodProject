@@ -303,7 +303,8 @@ document.getElementById('checkout-button').addEventListener('click', function ()
         alert("You need to login before you order");
         var url = window.location.href; 
         localStorage.setItem('cartRedirect', url)
-        window.location.href = 'https://localhost:7059/User/Login';
+        //window.location.href = 'http://178.16.10.55:7235/User/Login';
+        window.location.href = 'http://178.16.10.55:7235/User/Login';
         return;
     }
 
@@ -353,7 +354,8 @@ function isLoggedIn() {
 function placeOrder() {
     if (!isLoggedIn()) {
         alert("You need to login before you order");
-        window.location.href = 'https://localhost:7059/User/Login';
+        //window.location.href = 'https://localhost:7059/User/Login';
+        window.location.href = loginUrl;
         return;
     }
 
@@ -376,7 +378,8 @@ function placeOrder() {
     
 
     $.ajax({
-        url: 'https://localhost:7059/Order/Order',
+        //url: 'https://localhost:7059/Order/Order',
+        url: orderUrl,
         type: "POST",
         data: {
             storeId: currentStoreId,

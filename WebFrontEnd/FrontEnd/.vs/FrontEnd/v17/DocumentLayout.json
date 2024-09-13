@@ -3,48 +3,36 @@
   "WorkspaceRootPath": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\web\\wwwroot\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\wwwroot\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\web\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\web\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\web\\views\\user\\updateaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\views\\user\\updateaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\web\\wwwroot\\js\\updateaccount.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\wwwroot\\js\\updateaccount.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\web\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\web\\wwwroot\\js\\privacy.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\wwwroot\\js\\privacy.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\web\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\web\\wwwroot\\css\\privacy.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\wwwroot\\css\\privacy.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\web\\views\\shared\\_layoutproject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\views\\shared\\_layoutproject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\web\\wwwroot\\css\\storedetail.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\wwwroot\\css\\storedetail.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\web\\wwwroot\\js\\storedetail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\wwwroot\\js\\storedetail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{EFBFCEC5-C133-4AEF-8025-F1A8819FB459}|BusinessLogicLayerFront\\BusinessLogicLayerFront.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\businesslogiclayerfront\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBFCEC5-C133-4AEF-8025-F1A8819FB459}|BusinessLogicLayerFront\\BusinessLogicLayerFront.csproj|solutionrelative:businesslogiclayerfront\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\web\\views\\store\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\views\\store\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|d:\\ddt\\shopeefoodproject\\webfrontend\\frontend\\web\\wwwroot\\js\\signup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D28E1380-E3FC-4891-A38E-66C87176EDAE}|Web\\Web.csproj|solutionrelative:web\\wwwroot\\js\\signup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1875,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,137 +50,103 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "login.js",
-              "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\login.js",
-              "RelativeDocumentMoniker": "Web\\wwwroot\\js\\login.js",
-              "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\login.js",
-              "RelativeToolTip": "Web\\wwwroot\\js\\login.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-13T04:28:12.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\Views\\Order\\Details.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Order\\Details.cshtml",
-              "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\Views\\Order\\Details.cshtml",
-              "RelativeToolTip": "Web\\Views\\Order\\Details.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACsAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T14:34:22.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\appsettings.json",
-              "RelativeDocumentMoniker": "Web\\appsettings.json",
-              "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\appsettings.json",
-              "RelativeToolTip": "Web\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-12T10:23:45.341Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\Program.cs",
-              "RelativeDocumentMoniker": "Web\\Program.cs",
-              "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\Program.cs",
-              "RelativeToolTip": "Web\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T10:23:25.182Z"
+              "DocumentIndex": 4,
+              "Title": "login.css",
+              "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\css\\login.css",
+              "RelativeDocumentMoniker": "Web\\wwwroot\\css\\login.css",
+              "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\css\\login.css",
+              "RelativeToolTip": "Web\\wwwroot\\css\\login.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-13T09:27:52.958Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "privacy.css",
-              "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\css\\privacy.css",
-              "RelativeDocumentMoniker": "Web\\wwwroot\\css\\privacy.css",
-              "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\css\\privacy.css",
-              "RelativeToolTip": "Web\\wwwroot\\css\\privacy.css",
-              "ViewState": "AQIAAPIAAAAAAAAAAAAnwAUBAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-12T09:44:23.24Z"
+              "Title": "MenuService.cs",
+              "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\Services\\MenuService.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayerFront\\Services\\MenuService.cs",
+              "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\Services\\MenuService.cs",
+              "RelativeToolTip": "BusinessLogicLayerFront\\Services\\MenuService.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAmwCsAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T09:25:54.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StoreController.cs",
+              "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\Controllers\\StoreController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\StoreController.cs",
+              "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\Controllers\\StoreController.cs",
+              "RelativeToolTip": "Web\\Controllers\\StoreController.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAnwF8AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T09:24:39.919Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "Web\\Views\\Home\\Privacy.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAADQAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T09:43:37.223Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "privacy.js",
-              "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\privacy.js",
-              "RelativeDocumentMoniker": "Web\\wwwroot\\js\\privacy.js",
-              "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\privacy.js",
-              "RelativeToolTip": "Web\\wwwroot\\js\\privacy.js",
-              "ViewState": "AQIAALgAAAAAAAAAAAAgwNQAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-12T09:43:30.121Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_LayoutProject.cshtml",
-              "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\Views\\Shared\\_LayoutProject.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Shared\\_LayoutProject.cshtml",
-              "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\Views\\Shared\\_LayoutProject.cshtml",
-              "RelativeToolTip": "Web\\Views\\Shared\\_LayoutProject.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACYAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T09:29:20.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "storeDetail.css",
-              "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\css\\storeDetail.css",
-              "RelativeDocumentMoniker": "Web\\wwwroot\\css\\storeDetail.css",
-              "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\css\\storeDetail.css",
-              "RelativeToolTip": "Web\\wwwroot\\css\\storeDetail.css",
-              "ViewState": "AQIAABMAAAAAAAAAAAAlwCMAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-12T09:19:24.057Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "storeDetail.js",
-              "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\storeDetail.js",
-              "RelativeDocumentMoniker": "Web\\wwwroot\\js\\storeDetail.js",
-              "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\storeDetail.js",
-              "RelativeToolTip": "Web\\wwwroot\\js\\storeDetail.js",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAIwGUAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-12T09:19:15.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\Views\\Store\\Details.cshtml",
               "RelativeDocumentMoniker": "Web\\Views\\Store\\Details.cshtml",
               "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\Views\\Store\\Details.cshtml",
               "RelativeToolTip": "Web\\Views\\Store\\Details.cshtml",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAAAGsAAABNAAAA",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAGcAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T09:17:22.988Z"
+              "WhenOpened": "2024-09-13T09:04:26.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Web\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAO4AAAAAAAAAAAAAAAABAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T08:55:14.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "signUp.js",
+              "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\signUp.js",
+              "RelativeDocumentMoniker": "Web\\wwwroot\\js\\signUp.js",
+              "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\signUp.js",
+              "RelativeToolTip": "Web\\wwwroot\\js\\signUp.js",
+              "ViewState": "AQIAACMAAAAAAAAAAAAowDkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-13T08:54:04.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateAccount.js",
+              "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\UpdateAccount.js",
+              "RelativeDocumentMoniker": "Web\\wwwroot\\js\\UpdateAccount.js",
+              "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\UpdateAccount.js",
+              "RelativeToolTip": "Web\\wwwroot\\js\\UpdateAccount.js",
+              "ViewState": "AQIAACoBAAAAAAAAAAAMwDUBAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-13T08:52:10.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateAccount.cshtml",
+              "DocumentMoniker": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\Views\\User\\UpdateAccount.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\User\\UpdateAccount.cshtml",
+              "ToolTip": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\Web\\Views\\User\\UpdateAccount.cshtml",
+              "RelativeToolTip": "Web\\Views\\User\\UpdateAccount.cshtml",
+              "ViewState": "AQIAAJsAAAAAAAAAAAAcwKwAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-13T08:51:22.624Z",
+              "EditorCaption": ""
             }
           ]
         }

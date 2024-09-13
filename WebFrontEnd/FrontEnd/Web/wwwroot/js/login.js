@@ -19,7 +19,8 @@ function reloadLoginPage(event) {
 
     $.ajax({
         type: 'POST',
-        url: 'https://localhost:7059/User/CheckLogin',
+        //url: 'https://localhost:7059/User/CheckLogin',
+        url: checkLoginUrl,
         data: {
             Email: $('#email').val(),
             Password: $('#password').val(),
@@ -35,7 +36,8 @@ function reloadLoginPage(event) {
                     window.location.href = redirectUrl;
                 } else {
                     // No saved URL, redirect to homepage or another default page
-                    window.location.href = "https://localhost:7059/";
+                    //window.location.href = "https://localhost:7059/";
+                    window.location.href = homeUrl;
                 }
             } else {
                 // Show error message if login fails

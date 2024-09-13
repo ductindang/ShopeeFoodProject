@@ -1,78 +1,111 @@
-﻿
-.login-container {
-    max-width: 500px;
-    margin: 150px auto;
-    padding: 30px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.login-container h1 {
-    color: #333;
-}
-
-.social-login a {
+﻿/* Centering the container */
+.container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 18px;
-    padding: 12px;
-    border-radius: 5px;
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 15px;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
 }
 
-    .social-login a i {
-        margin-right: 10px;
-        font-size: 24px;
+/* Styling the login container */
+.login-container {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+    /* Heading styles */
+    .login-container h1 {
+        font-size: 2rem;
+        color: #d9534f;
+        margin-bottom: 30px;
     }
 
-.phone-number a {
-    background-color: #28a745;
-}
-
-.facebook a {
-    background-color: #3b5998;
-}
-
-.google a {
-    background-color: #db4437;
-}
-
-.container-form-group {
-    padding: 40px 0;
+/* Input field styles */
+.form-control {
+    border-radius: 30px;
+    padding: 10px 15px;
+    font-size: 1rem;
 }
 
 .input-group-text {
-    background-color: #f1f1f1;
+    /*border-radius: 30px 0 0 30px;*/
+    background-color: #007bff;
+    color: white;
+}
+
+.input-group-prepend .input-group-text i {
+    font-size: 1.2rem;
+}
+
+/* Eye icon for password visibility */
+#togglePassword {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Button styles */
+.button-action .btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
     border: none;
 }
 
-.form-check-label {
-    margin-left: 10px;
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+    }
+
+/* Forgot password and remember me styles */
+.form-check {
+    margin-top: 20px;
 }
 
 .forgot-pasword {
-    float: inline-end;
-}
-
-.button-action .btn {
-    width: 100%;
-    padding: 12px;
-    font-size: 18px;
-}
-
-.button-action a {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.text-center a {
-    color: #007bff;
+    float: right;
     text-decoration: none;
+    color: #007bff;
+    font-size: 0.9rem;
 }
 
+    .forgot-pasword:hover {
+        text-decoration: underline;
+    }
+
+.form-check-label {
+    margin-left: 5px;
+}
+
+/* Error message styling */
+#email-error,
+#password-error {
+    font-size: 0.9rem;
+    color: red;
+}
+
+/* Footer agreement */
+.login-container p a {
+    color: #007bff;
+}
+
+    .login-container p a:hover {
+        text-decoration: underline;
+    }

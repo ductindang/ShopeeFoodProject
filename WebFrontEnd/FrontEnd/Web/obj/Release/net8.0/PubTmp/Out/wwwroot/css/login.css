@@ -1,0 +1,111 @@
+﻿/* Centering the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Styling the login container */
+.login-container {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+    /* Heading styles */
+    .login-container h1 {
+        font-size: 2rem;
+        color: #d9534f;
+        margin-bottom: 30px;
+    }
+
+/* Input field styles */
+.form-control {
+    border-radius: 30px;
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+.input-group-text {
+    border-radius: 30px 0 0 30px;
+    background-color: #007bff;
+    color: white;
+}
+
+.input-group-prepend .input-group-text i {
+    font-size: 1.2rem;
+}
+
+/* Eye icon for password visibility */
+#togglePassword {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Button styles */
+.button-action .btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+    }
+
+/* Forgot password and remember me styles */
+.form-check {
+    margin-top: 20px;
+}
+
+.forgot-pasword {
+    float: right;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9rem;
+}
+
+    .forgot-pasword:hover {
+        text-decoration: underline;
+    }
+
+.form-check-label {
+    margin-left: 5px;
+}
+
+/* Error message styling */
+#email-error,
+#password-error {
+    font-size: 0.9rem;
+    color: red;
+}
+
+/* Footer agreement */
+.login-container p a {
+    color: #007bff;
+}
+
+    .login-container p a:hover {
+        text-decoration: underline;
+    }

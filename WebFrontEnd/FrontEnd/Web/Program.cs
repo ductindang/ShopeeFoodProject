@@ -1,5 +1,6 @@
 ﻿using BusinessLogicLayerFront.Services;
 using BusinessLogicLayerFront.ServicesInterface;
+using System.Net;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -88,11 +89,11 @@ var app = builder.Build();
 app.UseCors("AllowSpecificOrigin");
 
 // Configure the HTTP request pipeline
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-    app.UseHsts();
-}
+//if (!app.Environment.IsDevelopment())
+//{
+//    app.UseExceptionHandler("/Home/Error");
+//    app.UseHsts();
+//}
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

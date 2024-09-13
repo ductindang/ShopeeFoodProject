@@ -68,7 +68,11 @@
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        
     }
+    <script>
+        var checkEmailUrl = '@Url.Action("CheckEmailExist", "User")';
+    </script>
 
     <script src="~/js/signup.js" asp-append-version="true"></script>
 }

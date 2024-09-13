@@ -4,41 +4,31 @@
     ViewData["Title"] = "Login";
     Layout = "~/Views/Shared/_LayoutProject.cshtml";
 }
+
 <link href="~/css/login.css" rel="stylesheet" />
 
 <div class="container" id="container">
     <div class="login-container">
         <div class="text-center mb-4">
-            <h1 style="color: red">LOGIN</h1>
+            <h1>LOGIN</h1>
         </div>
-
-        @* <div class="social-login">
-            <div class="phone-number">
-                <a href="#"><i class="bi bi-phone"></i>PHONE NUMBER</a>
-            </div>
-            <div class="facebook">
-                <a href="#"><i class="bi bi-facebook"></i>FACEBOOK</a>
-            </div>
-            <div class="google">
-                <a href="#"><i class="bi bi-google"></i>GOOGLE</a>
-            </div>
-        </div> *@
-
-        @* <p class="text-center mt-3">Or login by your account</p> *@
 
         <form asp-action="Login" id="login-form">
             <div class="container-form-group">
+                <!-- Email Input -->
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="bi bi-envelope"></i></span>
                         </div>
-                        <input id="email" asp-for="Email" class="form-control" placeholder="Username or email" />
+                        <input id="email" asp-for="Email" class="form-control" placeholder="Username or email" style="margin-bottom: 10px"/>
                     </div>
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
+
+                <!-- Password Input -->
                 <div class="form-group">
-                    <div class="input-group">
+                    <div class="input-group" style="margin: 10px 0">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="bi bi-lock"></i></span>
                         </div>
@@ -53,18 +43,22 @@
                 </div>
             </div>
 
+            <!-- Error message -->
             <p class="text-center text-danger" id="error-message"></p>
 
+            <!-- Remember me and forgot password -->
             <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="rememberMe">
                 <label class="form-check-label" for="rememberMe">Remember me</label>
                 <a asp-controller="User" asp-action="ForgotPassword" class="forgot-pasword">Forgot password?</a>
             </div>
 
+            <!-- Login Button -->
             <div class="form-group button-action">
                 <button type="button" class="btn btn-primary" onclick="reloadLoginPage()">Login</button>
             </div>
 
+            <!-- Sign Up Button -->
             <div class="form-group button-action">
                 <a asp-controller="User" asp-action="SignUp" class="btn btn-secondary">Sign up</a>
             </div>
@@ -72,9 +66,15 @@
 
         @ViewBag.Error
 
+        <!-- Footer Text -->
         <p class="text-center mt-4">
             By logging in or signing up, you agree with <a href="#">Foody's regulatory policy</a>
         </p>
     </div>
 </div>
+
+<script>
+    var checkLoginUrl = '@Url.Action("CheckLogin", "User")';
+    var homeUrl = '@Url.Action("Index", "Home")';
+</script>
 <script src="~/js/login.js" asp-append-version="true"></script>

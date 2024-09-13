@@ -90,15 +90,19 @@ namespace Web.Controllers
                 var userAddresses = await _userAddressService.GetAllUserAddressesByUser(user.Id);
                 var userAddressDetails = new List<UserAddressDetailDto>();
 
-                foreach (var address in userAddresses)
+                if (userAddresses.Any() || userAddresses != null)
                 {
-                    var userAddressDetail = await _userAddressService.GetUserAddressDetail(address.Id);
-                    if (userAddressDetail != null)
+                    foreach (var address in userAddresses)
                     {
-                        userAddressDetail.UserAddressId = address.Id;
-                        userAddressDetails.Add(userAddressDetail);
+                        var userAddressDetail = await _userAddressService.GetUserAddressDetail(address.Id);
+                        if (userAddressDetail != null)
+                        {
+                            userAddressDetail.UserAddressId = address.Id;
+                            userAddressDetails.Add(userAddressDetail);
+                        }
                     }
                 }
+                
                 HttpContext.Session.SetString("userAddressDetail", userAddressDetails != null ? JsonConvert.SerializeObject(userAddressDetails) : string.Empty);
             }
 

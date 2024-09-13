@@ -105,8 +105,8 @@
                     <h4 class="menu-title">MENU</h4>
                     @foreach (var menu in menus)
                     {
-                        <div class="menu-item" title="Boneless chicken feet">
-                            <a href="#section-@menu.Id" class="menu-link">@menu.Name</a>
+                        <div class="menu-item" title="Boneless chicken feet" style="overflow:hidden; text-overflow: ellipsis">
+                            <a href="#section-@menu.Id" class="menu-link" style="white-space: nowrap" title="@menu.Name">@menu.Name</a>
                         </div>
                     }
                 </div>
@@ -118,7 +118,7 @@
                         </div> *@
                         @foreach (var menu in menus)
                         {
-                            <div style="" id="section-@menu.Id" style="">
+                            <div style="" id="section-@menu.Id">
                                 <span style="text-transform: uppercase; text-decoration: none; color: gray; font-size: 14px">
                                     @menu.Name
                                 </span>
@@ -165,6 +165,8 @@
 
 <script>
     var menuIds = @Html.Raw(Json.Serialize(menus.Select(menu => menu.Id).ToList()));
+    var loginUrl = '@Url.Action("Login", "User")';
+    var orderUrl = '@Url.Action("Order", "Order")';
 </script>
 
 <script src="~/js/storedetail.js" asp-append-version="true"></script>

@@ -136,9 +136,8 @@
 
 .left-menu {
     background-color: white;
-    height: 300px;
     padding: 10px;
-    /*position: relative;*/
+
     flex: 1;
 }
 
@@ -153,6 +152,7 @@
     border-right: 1px solid #ddd;
     padding: 15px;
     width: 250px;
+    height: fit-content;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
@@ -192,8 +192,8 @@
     background-color: white;
     flex: 3;
     margin: 0 30px;
-    min-width: 590px;
     padding-right: 10px;
+    height: fit-content;
 }
 
 
@@ -223,6 +223,7 @@
     padding: 20px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    height: fit-content;
 }
 
 .cart-title {

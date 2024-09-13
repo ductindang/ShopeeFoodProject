@@ -40,7 +40,8 @@ function checkEmailExists() {
     if (email.length > 0) {
         $.ajax({
             type: 'Get',
-            url: 'https://localhost:7059/User/CheckEmailExist',
+            //url: 'https://localhost:7059/User/CheckEmailExist',
+            url: checkEmailUrl,
             data: { email: email },
             success: function (result) {
                 if (result) {

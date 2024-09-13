@@ -307,13 +307,14 @@ function checkEmailExists() {
         emailError.textContent = 'Checking email availability...';
         $.ajax({
             type: 'GET',
-            url: 'https://localhost:7059/User/CheckEmailExist',
+            //url: 'https://localhost:7059/User/CheckEmailExist',
+            url: checkEmailUrl,
             data: { email: email },
             success: function (result) {
                 if (result) {
                     emailError.textContent = 'This email is already in use';
                 } else {
-                    emailError.textContent = 'This email is available';
+                    emailError.textContent = '';
                 }
             },
             error: function () {

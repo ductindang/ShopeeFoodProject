@@ -1,0 +1,278 @@
+﻿/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+    
+}
+
+/* Modal content */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 30%; 
+    max-width: 700px;
+}
+
+#caption {
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    font-size: 16px; 
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Close Button Hover */
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* Container and Layout Styles */
+.custom-container {
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.side-panel {
+    height: 500px;
+    width: 30%;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px 0 rgba(50, 50, 50, .3);
+}
+
+.main-panel {
+    width: 65%;
+    box-shadow: 0 0 3px 0 rgba(50, 50, 50, .3);
+}
+
+/* User Info Styles */
+.user-info {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-avatar-container {
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user-fullname {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Panel Link Styles */
+.panel-link {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 10px 0;
+}
+
+.panel-icon {
+    font-size: 13px;
+    padding: 5px;
+}
+
+
+.panel-link:hover {
+    color: red;
+}
+
+/* Active (clicked) state for the panel link */
+.panel-link.active {
+    color: red;
+}
+
+
+/* Main Panel Styles */
+.panel-header {
+    padding: 30px 10px;
+    background-color: #f5f5f5;
+    border: solid 1px #ebebeb;
+}
+
+.panel-title {
+    font-size: 18px;
+}
+
+.panel-content {
+    padding: 30px 20px;
+}
+
+.update-avatar-title {
+    color: #4073a7;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.avatar-section {
+    margin-top: 20px;
+    display: flex;
+}
+
+/* Avatar Update Styles */
+.avatar-preview-container {
+    display: flex;
+    flex: 1;
+}
+
+.avatar-preview {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.avatar-input-container {
+    padding: 0 10px;
+    flex: 3;
+}
+
+.input-label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.avatar-input {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reset-button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 7px;
+    background-color: #ccc;
+    color: #666;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: not-allowed;
+}
+
+
+
+
+/* Panel Content */
+.panel-content {
+    padding: 30px;
+}
+
+.update-info-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #4073a7;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.info-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-field {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+    .info-field label {
+        font-size: 14px;
+        color: #333;
+        width: 150px;
+    }
+
+    .info-field input,
+    .info-field select {
+        flex: 1;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-left: 10px;
+    }
+
+    .info-field button {
+        margin-left: 10px;
+        padding: 8px 12px;
+        font-size: 14px;
+        background-color: #4073a7;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .info-field button:hover {
+            background-color: #305f8f;
+        }
+
+.hidden {
+    display: none;
+}
+
+.show {
+    align-items: center;
+    gap: 10px;
+}
+
+
+#updateEmailButton {
+    background-color: transparent;
+    color: #0288d1;
+    border: 1px solid #0288d1;
+}
+
+    #updateEmailButton:hover {
+        background-color: #0288d1;
+        color: white;
+        border: 1px solid #0288d1;
+    }
+
+
+#cancelEmailButton,
+#cancelPasswordButton {
+    background-color: #ccc;
+    color: #666;
+}
+
+    #cancelEmailButton:hover,
+    #cancelPasswordButton:hover {
+        background-color: #bbb;
+    }
+
+

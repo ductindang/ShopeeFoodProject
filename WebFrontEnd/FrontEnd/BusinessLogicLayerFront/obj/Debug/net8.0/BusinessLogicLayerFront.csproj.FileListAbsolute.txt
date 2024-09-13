@@ -36,3 +36,16 @@ D:\DDT\Home\FixStructure\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\
 D:\DDT\Home\FixStructure\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\refint\BusinessLogicLayerFront.dll
 D:\DDT\Home\FixStructure\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\BusinessLogicLayerFront.pdb
 D:\DDT\Home\FixStructure\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\ref\BusinessLogicLayerFront.dll
+D:\DDT\ShopeeFoodProject\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\bin\Debug\net8.0\BusinessLogicLayerFront.deps.json
+D:\DDT\ShopeeFoodProject\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\bin\Debug\net8.0\BusinessLogicLayerFront.dll
+D:\DDT\ShopeeFoodProject\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\bin\Debug\net8.0\BusinessLogicLayerFront.pdb
+D:\DDT\ShopeeFoodProject\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\BusinessLogicLayerFront.csproj.AssemblyReference.cache
+D:\DDT\ShopeeFoodProject\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\BusinessLogicLayerFront.GeneratedMSBuildEditorConfig.editorconfig
+D:\DDT\ShopeeFoodProject\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\BusinessLogicLayerFront.AssemblyInfoInputs.cache
+D:\DDT\ShopeeFoodProject\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\BusinessLogicLayerFront.AssemblyInfo.cs
+D:\DDT\ShopeeFoodProject\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\BusinessLogicLayerFront.csproj.CoreCompileInputs.cache
+D:\DDT\ShopeeFoodProject\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\BusinessLogicLayerFront.sourcelink.json
+D:\DDT\ShopeeFoodProject\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\BusinessLogicLayerFront.dll
+D:\DDT\ShopeeFoodProject\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\refint\BusinessLogicLayerFront.dll
+D:\DDT\ShopeeFoodProject\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\BusinessLogicLayerFront.pdb
+D:\DDT\ShopeeFoodProject\WebFrontEnd\FrontEnd\BusinessLogicLayerFront\obj\Debug\net8.0\ref\BusinessLogicLayerFront.dll
