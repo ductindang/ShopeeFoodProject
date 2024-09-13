@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\BusinessLogicLayerFront.csproj": {}
+    "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\BusinessLogicLayerFront.csproj": {}
   },
   "projects": {
-    "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\BusinessLogicLayerFront.csproj": {
+    "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\BusinessLogicLayerFront.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\BusinessLogicLayerFront.csproj",
+        "projectUniqueName": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\BusinessLogicLayerFront.csproj",
         "projectName": "BusinessLogicLayerFront",
-        "projectPath": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\BusinessLogicLayerFront.csproj",
-        "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
-        "outputPath": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\obj\\",
+        "projectPath": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\BusinessLogicLayerFront.csproj",
+        "packagesPath": "C:\\Users\\tin.dang\\.nuget\\packages\\",
+        "outputPath": "D:\\DDT\\ShopeeFoodProject\\WebFrontEnd\\FrontEnd\\BusinessLogicLayerFront\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tin.dang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

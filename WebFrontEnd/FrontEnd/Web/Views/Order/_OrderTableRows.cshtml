@@ -1,0 +1,55 @@
+﻿@model IEnumerable<BusinessLogicLayerFront.DTOs.OrderDto>
+
+@if (Model != null && Model.Any())
+{
+    var index = 1;
+    foreach (var item in Model)
+    {
+        <tr>
+            <td>@index</td>
+            <td>@Html.DisplayFor(modelItem => item.RecipientName)</td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StoreName) <br />
+                @Html.DisplayFor(modelItem => item.StoreAddress)
+            </td>
+            <td>@item.OrderDate.ToString("dd/MM/yyyy HH:mm:ss")</td>
+            <td class="total-money" data-money="@item.TotalMoney">@item.TotalMoney</td>
+            <td>@Html.DisplayFor(modelItem => item.Status)</td>
+            <td>
+                <a class="btn btn-sm btn-secondary" data-id="@item.Id" onclick="openDetailModal(this)">Details</a>
+            </td>
+        </tr>
+        index++;
+    }
+}
+else
+{
+    <tr>
+        <td colspan="7" class="text-center">No orders found.</td>
+    </tr>
+}
+
+<script>
+    // Initialize the currency formatter for VND
+    const currencyFormatter = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' });
+
+    // Function to format currency
+    function formatCurrency(amount) {
+        return currencyFormatter.format(amount);
+    }
+
+    // Function to format all currency values in the table
+    function formatCurrencyInTable() {
+        document.querySelectorAll('.total-money').forEach(function (element) {
+            const amount = parseFloat(element.getAttribute('data-money'));
+            if (!isNaN(amount)) {
+                element.innerHTML = formatCurrency(amount);
+            }
+        });
+    }
+
+    // Call this function when the page loads
+    document.addEventListener('DOMContentLoaded', function () {
+        formatCurrencyInTable();
+    });
+</script>

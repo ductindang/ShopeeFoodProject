@@ -1,115 +1,125 @@
 ﻿@using Newtonsoft.Json
 @model IEnumerable<BusinessLogicLayerFront.DTOs.StoreDetailDto>
+
 @{
     ViewData["Title"] = "Load Store";
     Layout = null;
 
-    var selectedDistricts = ViewData["selectedDistricts"] as List<string>;
-    var selectedDistrictsJson = JsonConvert.SerializeObject(selectedDistricts); // Convert to JSON string
+    // Convert selectedDistricts and selectedSubCates to JSON strings
+    var selectedDistricts = ViewData["selectedDistricts"] as List<string> ?? new List<string>();
+    var selectedDistrictsJson = JsonConvert.SerializeObject(selectedDistricts);
+
+    var selectedSubCates = ViewData["selectedSubCates"] as List<int> ?? new List<int>();
+    var selectedSubCatesJson = JsonConvert.SerializeObject(selectedSubCates);
 }
+
 <link href="~/css/loadstore.css" rel="stylesheet" />
 
-@if (ViewBag.StoreCount > 0)
+@if (selectedDistricts.Any())
 {
-    <div style="text-align: end; width: 100%">@ViewBag.StoreCount Results</div>
-
-    @if (Model != null && Model.Any())
-    {
-        @foreach (var item in Model)
-        {
-            <div class="store-item" data-id="@item.StoreId">
-                <img src="@item.StoreImage" alt="Store Image"/>
-                <div class="store-name" title="@item.StoreName">
-                    <strong>@item.StoreName</strong>
-                </div>
-                <div class="address-res" title="@item.StreetName, @item.WardName, @item.DistrictName, @item.ProvinceName">
-                    @item.StreetName, @item.WardName, @item.DistrictName, @item.ProvinceName
-                </div>
-                <div class="icon-item-discount">
-                    <i class="fas fa-tag"></i> Item discount
-                </div>
-            </div>
-        }
-    }
-
-    <div style="width: 100%;">
-        @if (ViewBag.TotalPages > 1)
-        {
-            <nav aria-label="Page navigation">
-                <ul class="pagination" style="justify-content:center">
-                    <!-- Nút "<" để quay về trang trước -->
-                    <li class="page-item @(ViewBag.CurrentPage == 1 ? "turn-off" : "")">
-                        <a class="page-link" href="#" onclick="loadPage(@(ViewBag.CurrentPage - 1), @selectedDistrictsJson)">
-                            &lt;
-                        </a>
-                    </li>
-
-                    @if (ViewBag.TotalPages <= 7)
-                    {
-                        // Hiển thị tất cả trang nếu tổng số trang <= 7
-                        @for (int i = 1; i <= ViewBag.TotalPages; i++)
-                        {
-                            <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
-                                <a class="page-link" href="#" onclick="loadPage(@i, @selectedDistrictsJson)">@i</a>
-                            </li>
-                        }
-                    }
-                    else
-                    {
-                        // Hiển thị trang đầu tiên
-                        <li class="page-item @(1 == ViewBag.CurrentPage ? "active" : "")">
-                            <a class="page-link" href="#" onclick="loadPage(1, @selectedDistrictsJson)">1</a>
-                        </li>
-
-                        // Hiển thị dấu "..." nếu cần
-                        @if (ViewBag.CurrentPage > 4)
-                        {
-                            <li class="page-item disabled">
-                                <span class="page-link">...</span>
-                            </li>
-                        }
-
-                        // Hiển thị các trang xung quanh trang hiện tại
-                        @for (int i = Math.Max(2, ViewBag.CurrentPage - 2); i <= Math.Min(ViewBag.TotalPages - 1, ViewBag.CurrentPage + 2); i++)
-                        {
-                            <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
-                                <a class="page-link" href="#" onclick="loadPage(@i, @selectedDistrictsJson)">@i</a>
-                            </li>
-                        }
-
-                        // Hiển thị dấu "..." nếu cần
-                        @if (ViewBag.CurrentPage < ViewBag.TotalPages - 3)
-                        {
-                            <li class="page-item disabled">
-                                <span class="page-link">...</span>
-                            </li>
-                        }
-
-                        // Hiển thị trang cuối cùng
-                        <li class="page-item @(ViewBag.TotalPages == ViewBag.CurrentPage ? "active" : "")">
-                            <a class="page-link" href="#" onclick="loadPage(@ViewBag.TotalPages, @selectedDistrictsJson)">@ViewBag.TotalPages</a>
-                        </li>
-                    }
-
-                    <!-- Nút ">" để đi đến trang kế tiếp -->
-                    <li class="page-item @(ViewBag.CurrentPage == ViewBag.TotalPages ? "turn-off" : "")">
-                        <a class="page-link" href="#" onclick="loadPage(@(ViewBag.CurrentPage + 1), @selectedDistrictsJson)">
-                            &gt;
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        }
+    <div class="selected-areas-tag">
+        <span class="tag-label">Areas <strong>(@selectedDistricts.Count())</strong></span>
+        <span class="close-btn" onclick="closeDistrictBtn()">&times;</span>
     </div>
-
 }
-else
+
+@if (selectedSubCates.Any())
 {
-    <div class="text-danger">Cannot find any product, please check your conditions</div>
+    <div class="selected-category-tag">
+        <span class="tag-label">Category <strong>(@selectedSubCates.Count())</strong></span>
+        <span class="close-btn" onclick="closeSubCategoryBtn()">&times;</span>
+    </div>
 }
 
+<div class="store-list-container">
+    @if (ViewBag.StoreCount > 0)
+    {
+        <div class="results-count">@ViewBag.StoreCount Results</div>
 
+        @if (Model != null && Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <div class="store-item" data-id="@item.StoreId">
+                    <img class="store-image" src="@item.StoreImage" alt="Image of @item.StoreName" />
+                    <div class="store-name" title="@item.StoreName"><strong>@item.StoreName</strong></div>
+                    <div class="store-address" title="@item.StreetName, @item.WardName, @item.DistrictName, @item.ProvinceName">
+                        @item.StreetName, @item.WardName, @item.DistrictName, @item.ProvinceName
+                    </div>
+                    <div class="discount-icon">
+                        <i class="fas fa-tag"></i> Item discount
+                    </div>
+                </div>
+            }
+        }
 
+        <div class="pagination-container">
+            @if (ViewBag.TotalPages > 1)
+            {
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        <!-- Button "<" for previous page -->
+                        <li class="page-item @(ViewBag.CurrentPage == 1 ? "disabled" : "")">
+                            <a class="page-link" href="#" onclick="loadPage(@(ViewBag.CurrentPage - 1), @selectedDistrictsJson, @selectedSubCatesJson)">
+                                &lt;
+                            </a>
+                        </li>
 
+                        @if (ViewBag.TotalPages <= 7)
+                        {
+                            @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                            {
+                                <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                                    <a class="page-link" href="#" onclick="loadPage(@i, @selectedDistrictsJson, @selectedSubCatesJson)">@i</a>
+                                </li>
+                            }
+                        }
+                        else
+                        {
+                            <li class="page-item @(1 == ViewBag.CurrentPage ? "active" : "")">
+                                <a class="page-link" href="#" onclick="loadPage(1, @selectedDistrictsJson, @selectedSubCatesJson)">1</a>
+                            </li>
 
+                            @if (ViewBag.CurrentPage > 4)
+                            {
+                                <li class="page-item disabled">
+                                    <span class="page-link">...</span>
+                                </li>
+                            }
+
+                            @for (int i = Math.Max(2, ViewBag.CurrentPage - 2); i <= Math.Min(ViewBag.TotalPages - 1, ViewBag.CurrentPage + 2); i++)
+                            {
+                                <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                                    <a class="page-link" href="#" onclick="loadPage(@i, @selectedDistrictsJson, @selectedSubCatesJson)">@i</a>
+                                </li>
+                            }
+
+                            @if (ViewBag.CurrentPage < ViewBag.TotalPages - 3)
+                            {
+                                <li class="page-item disabled">
+                                    <span class="page-link">...</span>
+                                </li>
+                            }
+
+                            <li class="page-item @(ViewBag.TotalPages == ViewBag.CurrentPage ? "active" : "")">
+                                <a class="page-link" href="#" onclick="loadPage(@ViewBag.TotalPages, @selectedDistrictsJson, @selectedSubCatesJson)">@ViewBag.TotalPages</a>
+                            </li>
+                        }
+
+                        <!-- Button ">" for next page -->
+                        <li class="page-item @(ViewBag.CurrentPage == ViewBag.TotalPages ? "disabled" : "")">
+                            <a class="page-link" href="#" onclick="loadPage(@(ViewBag.CurrentPage + 1), @selectedDistrictsJson, @selectedSubCatesJson)">
+                                &gt;
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="no-results">Cannot find any store, please check your conditions.</div>
+    }
+</div>
 

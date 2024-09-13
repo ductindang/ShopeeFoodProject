@@ -69,16 +69,16 @@ namespace BusinessLogicLayerFront.Services
         }
 
 
-        public async Task<IEnumerable<StoreDto>> GetStoresByProvince(string provinceId)
+        public async Task<IEnumerable<StoreAddressDto>> GetStoreAddressesByProvince(string provinceId)
         {
             try
             {
-                var response = await _httpClient.GetAsync($"api/Province/{provinceId}/Stores");
+                var response = await _httpClient.GetAsync($"api/Province/{provinceId}/StoreAddresses");
                 if (response.IsSuccessStatusCode)
                 {
                     var jsonString = await response.Content.ReadAsStringAsync();
-                    var stores = JsonConvert.DeserializeObject<IEnumerable<StoreDto>>(jsonString);
-                    return stores;
+                    var storeAddresses = JsonConvert.DeserializeObject<IEnumerable<StoreAddressDto>>(jsonString);
+                    return storeAddresses;
                 }
                 else if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
                 {

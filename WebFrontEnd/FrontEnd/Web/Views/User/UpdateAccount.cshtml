@@ -1,0 +1,172 @@
+﻿@model BusinessLogicLayerFront.DTOs.UserDto
+@using BusinessLogicLayerFront.DTOs
+@using Newtonsoft.Json
+
+@{
+    Layout = null;
+}
+
+<link href="~/css/editaccount.css" rel="stylesheet" />
+
+<div>
+<form asp-action="UpdateAccount" id="update-account-form" method="post">
+    <div class="panel-header">
+        <strong class="panel-title">User Information</strong>
+    </div>
+
+    <div class="panel-content">
+        <div class="update-avatar-title">Update Avatar</div>
+        @{
+            var userCheckJson = Context.Session.GetString("userCheck");
+            <div class="avatar-section">
+                @if (!string.IsNullOrEmpty(userCheckJson))
+                {
+                    var userCheck = JsonConvert.DeserializeObject<UserDto>(userCheckJson);
+                    var avatarUrl = !string.IsNullOrEmpty(userCheck.Avatar)
+                    ? userCheck.Avatar
+                    : "https://down-bs-vn.img.susercontent.com/vn-11134523-7r98o-ltks4aztc8wad6.webp";
+
+                    <div class="avatar-preview-container">
+                        <div>
+                            <img id="avatarPreview" src="@avatarUrl"
+                                 style="cursor: pointer"
+                                 alt="User Avatar"
+                                 class="avatar-preview"
+                                 onclick="openModal(this)"
+                                 onerror="this.onerror=null; this.src='https://down-bs-vn.img.susercontent.com/vn-11134523-7r98o-ltks4aztc8wad6.webp';" />
+                        </div>
+                    </div>
+
+                    <div class="avatar-input-container">
+                        <label for="avatarInput" class="input-label">Enter your new Avatar URL</label>
+                        <input type="text" id="avatarInput" name="Avatar" placeholder="@avatarUrl"
+                               class="avatar-input"
+                               oninput="handleInputChange()" data-default-avatar="@avatarUrl" />
+
+                        <button type="submit" id="resetButton" class="reset-button" disabled>
+                            Update
+                        </button>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+
+    <hr style="width: 90%; margin: 20px auto 0 auto;" />
+
+    <div class="panel-content">
+        <div class="update-info-title">Change Info</div>
+        @{
+            @if (!string.IsNullOrEmpty(userCheckJson))
+            {
+                var userCheck = JsonConvert.DeserializeObject<UserDto>(userCheckJson);
+                <div class="info-form">
+                    <div class="info-field">
+                        <label for="nameInput">Name</label>
+                        <input type="text" id="nameInput" name="FullName" placeholder="Enter your name" value="@userCheck.FullName" />
+                    </div>
+                    <div class="info-field">
+                        <label for="genderSelect">Gender</label>
+                        <div class="radio-group" style="display: flex; justify-content: space">
+                            <div>
+                                <input type="radio" id="genderMale" asp-for="Gender" name="Gender" value="0" /> Male
+                            </div>
+                            <div>
+                                <input type="radio" id="genderFemale" asp-for="Gender" name="Gender" value="1" /> Female
+                            </div>
+                            <div>
+                                <input type="radio" id="genderOther" asp-for="Gender" name="Gender" value="2" /> Other
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-field">
+                        <label for="emailInput">Email</label>
+                        <div style="width: 100%; margin-left: 40px">
+                                <button type="button" id="updateEmailButton" style="">Update Email</button>
+
+                            <div id="emailField" class="hidden">
+                                <input asp-for="Email" type="email" name="Email" id="emailInput" placeholder="Enter your email" oninput="checkEmailExists()" style="width: 70%" />
+                                <button type="button" id="cancelEmailButton" style="float: right">Cancel</button>
+                            </div>
+
+                            <div style="margin-left: 10px"><span id="email-error" class="text-danger"></span></div>
+                        </div>
+                    </div>
+                    <div class="info-field">
+                        <label for="oldPasswordInput">Password</label>
+                            <div id="updatePasswordDiv" style="width: 100%; margin-left: 50px;">
+                                <div style="display: flex; ">
+                                    <div style="padding: 10px 0">********</div>
+                                    <button type="button" id="updatePasswordButton" style="border-radius: initial;margin-left: 30%; border: none; border-bottom: 1px solid #4073a7; background-color: transparent; color: #4073a7; padding: 0"><strong>Change Password</strong></button>
+                                </div>
+                            </div>
+                            
+                        <div id="passwordFields" class="hidden" style="width: 100%">
+                            <div style="display: flex; flex-direction: column; margin-left: 30px">
+                                <div class="input-group">
+                                    <input asp-for="Password" type="password" name="Password" id="newPasswordInput" placeholder="Enter your new password" style="margin-bottom: 20px" oninput="validatePassword()" />
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="togglePassword" style="cursor: pointer;">
+                                            <i class="bi bi-eye"></i>
+                                        </span>
+                                    </div>
+                                    <div style="margin-left: 10px">
+                                        <span class="text-danger"></span>
+                                        <span id="password-error" class="text-danger"></span>
+                                    </div>
+                                </div>
+
+                                <input type="password" id="confirmPasswordInput" name="ConfirmPassword" placeholder="Confirm your new password" style="margin-bottom: 20px" />
+                                <span id="password-confirm-error" class="text-danger" style="margin-left: 10px"></span>
+                                <button type="button" id="cancelPasswordButton">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="submit" id="resetInfoButton" class="reset-button" disabled>
+                            Save change
+                        </button>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+    <hr style="width: 90%; margin: 20px auto 0 auto;" />
+
+
+    <div class="panel-content">
+        <div class="update-info-title">Phone manager</div>
+        @{
+            @if (!string.IsNullOrEmpty(userCheckJson))
+            {
+                var userCheck = JsonConvert.DeserializeObject<UserDto>(userCheckJson);
+                <div class="info-form">
+                    <label for="phoneInput" class="input-label">Enter your new Phone</label>
+                    <input asp-for="PhoneNumber" type="text" id="phoneInput" placeholder="Phone number"
+                           class="phone-input"
+                           oninput="handleInputPhoneChange(); validatePhoneNumber()" data-default-phone="@userCheck.PhoneNumber" value="@userCheck.PhoneNumber" />
+
+                    <span id="phone-number-error" class="text-danger"></span>
+
+                        <button type="submit" id="resetPhoneButton" class="reset-button"  disabled>
+                        Update phone number
+                    </button>
+                </div>
+            }
+        }
+    </div>
+    <hr style="width: 90%; margin: 20px auto 0 auto;" />
+
+    @* <div class="panel-content">
+        <div class="info-form">
+            <button id="updateUser" type="submit" class="update-button" style="background-color: rgb(64, 115, 167); color: white; padding: 7px; font-weight: bold; border: none;">
+                Update user info
+            </button>
+        </div>
+    </div> *@
+</form>
+</div>
+
+<script src="~/js/updateaccount.js" asp-append-version="true"></script>

@@ -5,10 +5,83 @@
     background-size: cover;
     height: 1000px;
     background-repeat: no-repeat;
-    color: white;
     display: flex;
+    justify-content: center;
+}
+
+.sub-banner {
+    width: 100%;
+    height: 1000px;
+    color: white;
+    background-size: cover;
+    display: flex;
+    max-width: 1500px;
     padding: 0 8%;
 }
+
+
+.spinner-wave {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+}
+
+    .spinner-wave div {
+        background-color: #3498db;
+        height: 100%;
+        width: 6px;
+        margin: 2px;
+        animation: wave 1.2s infinite ease-in-out, color-change 1.2s infinite ease-in-out;
+    }
+
+        .spinner-wave div:nth-child(1) {
+            animation-delay: -1.2s;
+        }
+
+        .spinner-wave div:nth-child(2) {
+            animation-delay: -1.1s;
+        }
+
+        .spinner-wave div:nth-child(3) {
+            animation-delay: -1s;
+        }
+
+        .spinner-wave div:nth-child(4) {
+            animation-delay: -0.9s;
+        }
+
+        .spinner-wave div:nth-child(5) {
+            animation-delay: -0.8s;
+        }
+
+@keyframes wave {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+    }
+
+    20% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes color-change {
+    0% {
+        background-color: #3498db; /* Blue */
+    }
+
+    50% {
+        background-color: #e74c3c; /* Red */
+    }
+
+    100% {
+        background-color: #3498db; /* Blue */
+    }
+}
+
+
+
 
 .left-info {
     margin-top: 200px;
@@ -146,6 +219,95 @@
             color: lightseagreen;
             text-decoration: none;
         }
+
+
+
+
+
+.sub-list-deal {
+    padding: 20px;
+}
+
+.store-item {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+    .store-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+.store-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.store-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.store-name {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    
+}
+
+.address-res {
+    font-size: 14px;
+    color: #777;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.store-discount {
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #187caa;
+    font-weight: bold;
+    font-size: 14px;
+    border-top: 1px solid #eee;
+}
+
+    .store-discount i {
+        color: red;
+        margin-right: 5px;
+    }
+
+/* Loading Spinner */
+#loading-store-spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 10;
+}
+
+
+
+
 
 .sub-list-deal {
     display: flex;

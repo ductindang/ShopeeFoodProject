@@ -5,7 +5,7 @@
         traditional: true,
         data: {
             page: page,
-            storePerPage: 1,
+            storePerPage: 5,
             selectedDistricts: selectedDistricts,
         },
         success: function (result) {
@@ -21,7 +21,6 @@
 
     // Event delegation for the pagination button
     $(document).on('click', '.list-deal button', function () {
-        var selectedDistricts = getSelectedDistricts();
         currentPage++;
         loadPage(currentPage);
     });
@@ -68,6 +67,33 @@ window.onclick = function (event) {
         }
     }
 };
+
+
+function closeDistrictBtn() {
+    var districtCheckboxes = document.querySelectorAll('.district-checkbox:checked');
+    districtCheckboxes.forEach(function (checkbox) {
+        checkbox.checked = false;
+    });
+    var selectedDistricts = getSelectedDistricts();
+    console.log("Selected District IDs:", selectedDistricts);
+    loadPage(1, selectedDistricts);
+    var closeButton = document.querySelector('.numberDistrict');
+    if (closeButton) {
+        closeButton.remove();
+    }
+}
+//document.addEventListener("DOMContentLoaded", function () {
+//    const closeBtn = document.querySelector('.numberDistrict .close-btn');
+//    if (closeBtn) {
+//        closeBtn.addEventListener('click', function () {
+//            const numberDistrictDiv = document.querySelector('.numberDistrict');
+//            if (numberDistrictDiv) {
+//                numberDistrictDiv.remove();
+//            }
+//        });
+//    }
+//});
+
 
 
 

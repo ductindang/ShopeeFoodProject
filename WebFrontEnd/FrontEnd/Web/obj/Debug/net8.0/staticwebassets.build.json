@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Wr4a64BfcRhqpw7/k8t9z4+o/U9+l8ktUN8FZ30P0yk=",
+  "Hash": "mloePbsmAcM+XAKo/kYEo9F9AclcY6ZdUJG5vKTk2xA=",
   "Source": "Web",
   "BasePath": "_content/Web",
   "Mode": "Default",
@@ -53,6 +53,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Web.bundle.scp.css"
+    },
+    {
+      "Identity": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\css\\CheckOut.css",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "css/CheckOut.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\CheckOut.css"
+    },
+    {
+      "Identity": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\css\\EditAccount.css",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "css/EditAccount.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\EditAccount.css"
     },
     {
       "Identity": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\css\\loadProject.css",
@@ -110,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login.css"
+    },
+    {
+      "Identity": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\css\\OrderInfo.css",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "css/OrderInfo.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\OrderInfo.css"
     },
     {
       "Identity": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\css\\privacy.css",
@@ -283,6 +340,25 @@
       "OriginalItemSpec": "wwwroot\\Image\\logoGgplay.jpg"
     },
     {
+      "Identity": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\EditAccount.js",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "js/EditAccount.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\EditAccount.js"
+    },
+    {
       "Identity": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\loadProject.js",
       "SourceId": "Web",
       "SourceType": "Discovered",
@@ -319,6 +395,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\login.js"
+    },
+    {
+      "Identity": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\OrderInfo.js",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "js/OrderInfo.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\OrderInfo.js"
     },
     {
       "Identity": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\privacy.js",
@@ -452,6 +547,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\StoresBySubCategory.js"
+    },
+    {
+      "Identity": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\js\\UpdateAccount.js",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "js/UpdateAccount.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\UpdateAccount.js"
     },
     {
       "Identity": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -1535,6 +1649,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\uploads\\Screenshot 2024-09-05 151611.png",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\C#\\Company\\CloneHome\\FixStructure\\WebFrontEnd\\FrontEnd\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "uploads/Screenshot 2024-09-05 151611.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Screenshot 2024-09-05 151611.png"
     }
   ]
 }

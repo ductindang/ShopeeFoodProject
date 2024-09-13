@@ -1,0 +1,56 @@
+﻿@using BusinessLogicLayerFront.DTOs
+@model IEnumerable<BusinessLogicLayerFront.DTOs.OrderDetailDto>
+
+@{
+    Layout = null;
+    // Calculate the total amount for the order
+    var totalAmount = Model != null ? Model.Sum(item => item.Price * item.Amount) : 0;
+
+    // Custom number format for periods as thousand separators
+    string FormatCurrency(double amount)
+    {
+        return amount.ToString("N0").Replace(",", ".");
+    }
+}
+
+<div class="table-responsive bg-white p-3 rounded shadow-sm">
+    <table class="table table-striped text-center" style="text-align: center">
+        <thead>
+            <tr class="table-dark">
+                <th>Product Image</th>
+                <th>Dishes</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <img src="@item.ProductImage" alt="@item.ProductName" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;" />
+                        </td>
+
+                        <td>@item.ProductName</td>
+                        <td>@item.Amount</td>
+                        <td>@FormatCurrency(item.Price)<sup>đ</sup></td>
+                        <td>@FormatCurrency(item.Price * item.Amount)<sup>đ</sup></td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" class="text-center">No orders found.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <span style="justify-content: flex-end; color: red; font-size: 20px; float: right">
+        Total: @FormatCurrency(totalAmount) <sup>đ</sup>
+    </span>
+
+</div>

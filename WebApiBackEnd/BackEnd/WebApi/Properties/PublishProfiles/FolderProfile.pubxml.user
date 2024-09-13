@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\inetpub\wwwroot\RestApi</_PublishTargetUrl>
+    <History>True|2024-09-13T04:19:04.7952257Z||;False|2024-09-13T11:17:30.8950066+07:00||;True|2024-09-13T11:17:00.5069684+07:00||;True|2024-09-13T11:02:05.5621329+07:00||;False|2024-09-13T11:01:53.1875955+07:00||;True|2024-09-13T11:00:44.7204957+07:00||;False|2024-09-13T11:00:31.2406669+07:00||;True|2024-09-13T10:26:06.4541013+07:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

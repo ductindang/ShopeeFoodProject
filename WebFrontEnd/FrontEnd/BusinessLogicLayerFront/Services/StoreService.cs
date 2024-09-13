@@ -89,11 +89,11 @@ namespace BusinessLogicLayerFront.Services
         //    }
         //}
 
-        public async Task<StoreDetailDto> GetStoreWithDetailAddress(int id)
+        public async Task<StoreDetailDto> GetStoreWithDetailAddress(int storeAddressId, int storeId, string wardId)
         {
             try
             {
-                var response = await _httpClient.GetAsync($"api/Store/{id}/AddressDetail");
+                var response = await _httpClient.GetAsync($"api/Store/{storeId}/StoreAddress/{storeAddressId}/Ward/{wardId}/AddressDetail");
                 if (response.IsSuccessStatusCode)
                 {
                     var jsonString = await response.Content.ReadAsStringAsync();

@@ -13,7 +13,7 @@ namespace BusinessLogicLayerFront.ServicesInterface
         Task<StoreDto> GetStoreById(int id);
         Task<IEnumerable<StoreDto>> GetStoresByCategoryId(int categoryId);
         //Task<IEnumerable<StoreDto>> GetStoresByName(string name);
-        Task<StoreDetailDto> GetStoreWithDetailAddress(int storeId);
+        Task<StoreDetailDto> GetStoreWithDetailAddress(int storeAddressId, int storeId, string wardId);
         Task<IEnumerable<StoreDto>> GetStoresBySubCategory(int subCategoryId);
     }
 }

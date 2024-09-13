@@ -1,43 +1,89 @@
-﻿@model BusinessLogicLayerFront.DTOs.StoreDetailDto
+﻿@using BusinessLogicLayerFront.DTOs
+@using Newtonsoft.Json
+@using System.Globalization
+@model BusinessLogicLayerFront.DTOs.StoreDetailDto
 @{
     ViewData["Title"] = "Store Details";
     Layout = "~/Views/Shared/_LayoutProject.cshtml";
+
+    var menusJson = Context.Session.GetString("menusInStore");
+
+    // Initialize the menus variable to an empty list to avoid null reference exceptions
+    IEnumerable<MenuDto> menus = Enumerable.Empty<MenuDto>();
+
+    // Check if menusJson is not null or empty before deserializing
+    if (!string.IsNullOrEmpty(menusJson))
+    {
+        menus = JsonConvert.DeserializeObject<IEnumerable<MenuDto>>(menusJson) ?? Enumerable.Empty<MenuDto>();
+    }
+
+    var mostExpensiveProduct = Context.Session.GetString("mostExpensiveProduct");
+    var cheapestProduct = Context.Session.GetString("cheapestProduct");
+
+    var expenProduct = new ProductDto();
+    var cheapProduct = new ProductDto();
+    var cheapPrice = 0.0;
+    var expenPrice = 0.0;
+
+    var numberFormat = new NumberFormatInfo
+            {
+                NumberGroupSeparator = ".",
+                NumberDecimalDigits = 0
+            };
+
+    if (!string.IsNullOrEmpty(mostExpensiveProduct))
+    {
+        expenProduct = JsonConvert.DeserializeObject<ProductDto>(mostExpensiveProduct) ?? new ProductDto();
+        expenPrice = expenProduct.Price;
+    }
+
+    if (!string.IsNullOrEmpty(cheapestProduct))
+    {
+        cheapProduct = JsonConvert.DeserializeObject<ProductDto>(cheapestProduct) ?? new ProductDto();
+        cheapPrice = cheapProduct.Price;
+    }
+
 }
 
+
 <link href="~/css/storedetail.css" rel="stylesheet" />
-<div class="container">
-    <h1 class="display-4">Details</h1>
-
-
-
+<link href="~/css/checkout.css" rel="stylesheet" />
+<div class="" style="margin-top: -100px">
     <div class="mt-5 bg-white detail" id="detailSection" style="">
         <img style="max-width: 480px" src="@Model.StoreImage" alt="@Model.StoreName" />
         <div style="">
-            <p class="link-address" style="">Home >> @Model.ProvinceName >> @Model.StoreName - @Model.StreetName</p>
-            <div class="bistro"><span style="">BISTRO</span><span style=""> Branch</span></div>
-            <div class="product-name"><span style="">@Model.StoreName - @Model.StreetName</span></div>
-            <div class="product-address"><span style="">@Model.StreetName, @Model.WardName, @Model.DistrictName, @Model.ProvinceName</span></div>
-            <div style="display:flex; font-size: 14px;">
-                <div style="color: #ffc107">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+            <div>
+                <p class="link-address" style="">Home >> @Model.ProvinceName >> @Model.StoreName</p>
+                <div class="bistro"><span style="">BISTRO</span><span style=""> Branch</span></div>
+                <div class="product-name"><span style="">@Model.StoreName - @Model.StreetName</span></div>
+                <div class="product-address"><span style="">@Model.StreetName, @Model.WardName, @Model.DistrictName, @Model.ProvinceName</span></div>
+                <div style="display:flex; font-size: 14px;">
+                    <div style="color: #ffc107">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="number-comment"><span style="padding-left: 3px;">999+</span></div>
+                    <div style=""><span style="padding-left: 3px">reviews on ShopeeFood</span></div>
+                </div>
+                <div style=""><a href="#" style="padding-left: 3px; text-decoration: none; font-size: 14px; color: #0288d1">View reviews on Foody</a></div>
+                <div style="">
+                    <span style="padding-left: 3px; text-decoration: none; color: #6cc942; font-size: 15px">Open</span> <span style="margin-left: 20px; font-size: 15px">
+                        <i class="far fa-clock" style="margin-right: 10px"></i>
+                        @Model.StoreOpenTime.ToString(@"hh\:mm") - @Model.StoreCloseTime.ToString(@"hh\:mm")
+                    </span>
                 </div>
 
-                <div class="number-comment"><span style="padding-left: 3px;">999+</span></div>
-                <div style=""><span style="padding-left: 3px">reviews on ShopeeFood</span></div>
+                <div style="font-size: 15px"><span style=""><i class="fas fa-dollar-sign"></i> @cheapPrice.ToString("N0", numberFormat) - @expenPrice.ToString("N0", numberFormat)</span></div>
             </div>
-            <div style=""><a href="#" style="padding-left: 3px; text-decoration: none; font-size: 14px; color: #0288d1">View reviews on Foody</a></div>
-            <div style=""><span style="padding-left: 3px; text-decoration: none; color: #6cc942; font-size: 15px">Open</span> <span style="margin-left: 20px; font-size: 15px"><i class="far fa-clock" style="margin-right: 10px"></i>@Model.StoreOpenTime.ToString(@"hh\:mm") - @Model.StoreCloseTime.ToString(@"hh\:mm")</span></div>
-
-            <div style="font-size: 15px"><span style=""><i class="fas fa-dollar-sign"></i> @((int)(Model.StoreMaxPrice / 5)).000 - @((int)(Model.StoreMaxPrice)).000</span></div>
-
+            
             <br />
-            <hr />
+            <hr style="width: 80%; max-width: 450px"/>
             <div style="display: flex">
-                <div style="margin-right: 40px; width: 50%">
+                <div style="width: 50%">
                     <div style="font-size: 13px">SERRVICE FEE</div>
                     <div style="color: #ee4d2d; font-weight: bold; font-size: 14px">0.0% Service fee</div>
                 </div>
@@ -50,265 +96,75 @@
 
     </div>
 
-
+    
 
     <div style="margin-top: 50px">
-        <div style="display: flex">
-            <div class="left-menu" id="leftMenu" style="">
-                <h4 style="color:red">MENU</h4>
-                <div style="padding: 10px" title="Boneless chicken feet"><a href="#section1" style="">Boneless chicken feet</a></div>
-                <div style="padding: 10px" title="Boneless chicken feet"><a href="#section2" style="">Whole Chicken Feet</a></div>
-                <div style="padding: 10px" title="Boneless chicken feet"><a href="#section3" style="">Promotion combo</a></div>
-            </div>
-
-            <div class="content" style="box-sizing: border-box">
-                <div style="padding: 20px">
-                    <div style="" id="section1"><a href="" style="text-transform: uppercase; text-decoration: none; color: gray">Boneless chicken feet</a></div>
-                    <div style="margin-top: 20px; display: flex; align-items: center; box-sizing: border-box">
-                        <img style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;" src="@Model.StoreImage" alt="@Model.StoreName" />
-                        <div style="padding: 0 3%; width: 65%">
-                            <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                                <span style="font-weight: bold; font-size: 16px;" title="Boneless Thai Chicken Feet - Size M (Large box)">
-                                    Boneless Thai Chicken Feet - Size M (Large box)
-                                </span>
-                            </div>
-                            <div>
-                                <span style="font-size: 13px; color: #464646;">
-                                    @Model.StoreDescription
-                                </span>
-                            </div>
+        <div class="container">
+            <div style="display: flex">
+                <div class="left-menu" id="leftMenu">
+                    <h4 class="menu-title">MENU</h4>
+                    @foreach (var menu in menus)
+                    {
+                        <div class="menu-item" title="Boneless chicken feet">
+                            <a href="#section-@menu.Id" class="menu-link">@menu.Name</a>
                         </div>
-                        <div style="padding: 0 3%; display: flex; flex-direction: column; align-items: flex-end;">
-                            <div>
-                                <span style="text-decoration: line-through; color: #6d6f71; font-size: 13px;">
-                                    @((int)(Model.StoreMaxPrice / 3)).000<sup>đ</sup>
-                                </span>
-                            </div>
-                            <div>
-                                <span style="color: #0288d1; font-size: 16px;">
-                                    @((int)(Model.StoreMaxPrice / 6)).000
-                                </span><sup style="color: #0288d1;">đ</sup>
-                            </div>
-                        </div>
-                        <div class="btn-adding" style="10px; font-size: 20px; cursor: pointer;">
-                            +
-                        </div>
-                    </div>
-                    <hr />
-
-                    <div style="margin-top: 20px; display: flex; align-items: center; box-sizing: border-box">
-                        <img style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;" src="@Model.StoreImage" alt="@Model.StoreName" />
-                        <div style="padding: 0 3%; width: 65%">
-                            <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                                <span style="font-weight: bold; font-size: 16px;" title="Boneless Thai Chicken Feet - Size L">
-                                    Boneless Thai Chicken Feet - Size L
-                                </span>
-                            </div>
-                            <div>
-                                <span style="font-size: 13px; color: #464646;">
-                                    @Model.StoreDescription
-                                </span>
-                            </div>
-                        </div>
-                        <div style="padding: 0 3%; display: flex; flex-direction: column; align-items: flex-end;">
-                            <div>
-                                <span style="text-decoration: line-through; color: #6d6f71; font-size: 13px;">
-                                    @((int)(Model.StoreMaxPrice / 5)).000
-                                </span><sup>đ</sup>
-                            </div>
-                            <div>
-                                <span style="color: #0288d1; font-size: 16px;">
-                                    @((int)(Model.StoreMaxPrice / 6)).000
-                                </span><sup style="color: #0288d1;">đ</sup>
-                            </div>
-                        </div>
-                        <div class="btn-adding" style="font-size: 20px; cursor: pointer;">
-                            +
-                        </div>
-                    </div>
-                    <hr />
-
-
-                    <div style="margin-top: 20px; display: flex; align-items: center; box-sizing: border-box">
-                        <img style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;" src="@Model.StoreImage" alt="@Model.StoreName" />
-                        <div style="padding: 0 3%; width: 65%">
-                            <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                                <span style="font-weight: bold; font-size: 16px;" title="Boneless Thai Chicken Feet - Size M (Large box)">
-                                    Boneless Thai Chicken Feet
-                                </span>
-                            </div>
-                            <div>
-                                <span style="font-size: 13px; color: #464646;">
-                                    @Model.StoreDescription
-                                </span>
-                            </div>
-                        </div>
-                        <div style="padding: 0 3%; display: flex; flex-direction: column; align-items: flex-end;">
-                            <div>
-                                <span style="text-decoration: line-through; color: #6d6f71; font-size: 13px;">
-                                    @((int)(Model.StoreMaxPrice / 5)).000
-                                </span><sup>đ</sup>
-                            </div>
-                            <div>
-                                <span style="color: #0288d1; font-size: 16px;">
-                                    @((int)(Model.StoreMaxPrice / 6)).000
-                                </span><sup style="color: #0288d1;">đ</sup>
-                            </div>
-                        </div>
-                        <div class="btn-adding" style="10px; font-size: 20px; cursor: pointer;">
-                            +
-                        </div>
-                    </div>
-                    <hr />
-
-
-                    <div style="" id="section2"><a href="" style="text-transform: uppercase; text-decoration: none; color: gray">Whole Chicken Feet</a></div>
-
-                    <div style="margin-top: 20px; display: flex; align-items: center; box-sizing: border-box">
-                        <img style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;" src="@Model.StoreImage" alt="@Model.StoreName" />
-                        <div style="padding: 0 3%; width: 65%">
-                            <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                                <span style="font-weight: bold; font-size: 16px;" title="Boneless Thai Chicken Feet - Size M (Large box)">
-                                    Boneless Thai Chicken Feet - Size M (Large box)
-                                </span>
-                            </div>
-                            <div>
-                                <span style="font-size: 13px; color: #464646;">
-                                    Boneless chicken feet mixed with Thai sauce + special dipping sauce
-                                </span>
-                            </div>
-                        </div>
-                        <div style="padding: 0 3%; display: flex; flex-direction: column; align-items: flex-end;">
-                            <div>
-                                <span style="text-decoration: line-through; color: #6d6f71; font-size: 13px;">
-                                    @((int)(Model.StoreMaxPrice / 5)).000
-                                </span><sup>đ</sup>
-                            </div>
-                            <div>
-                                <span style="color: #0288d1; font-size: 16px;">
-                                    @((int)(Model.StoreMaxPrice / 6)).000
-                                </span><sup style="color: #0288d1;">đ</sup>
-                            </div>
-                        </div>
-                        <div class="btn-adding" style="10px; font-size: 20px; cursor: pointer;">
-                            +
-                        </div>
-                    </div>
-                    <hr />
-
-
-                    <div style="margin-top: 20px; display: flex; align-items: center; box-sizing: border-box">
-                        <img style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;" src="@Model.StoreImage" alt="@Model.StoreName" />
-                        <div style="padding: 0 3%; width: 65%">
-                            <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                                <span style="font-weight: bold; font-size: 16px;" title="Boneless Thai Chicken Feet - Size M (Large box)">
-                                    Boneless Thai Chicken Feet - Size M (Large box)
-                                </span>
-                            </div>
-                            <div>
-                                <span style="font-size: 13px; color: #464646;">
-                                    Boneless chicken feet mixed with Thai sauce + special dipping sauce
-                                </span>
-                            </div>
-                        </div>
-                        <div style="padding: 0 3%; display: flex; flex-direction: column; align-items: flex-end;">
-                            <div>
-                                <span style="text-decoration: line-through; color: #6d6f71; font-size: 13px;">
-                                    @((int)(Model.StoreMaxPrice / 5)).000
-                                </span><sup>đ</sup>
-                            </div>
-                            <div>
-                                <span style="color: #0288d1; font-size: 16px;">
-                                    @((int)(Model.StoreMaxPrice / 6)).000
-                                </span><sup style="color: #0288d1;">đ</sup>
-                            </div>
-                        </div>
-                        <div class="btn-adding" style="10px; font-size: 20px; cursor: pointer;">
-                            +
-                        </div>
-                    </div>
-                    <hr />
-
-
-
-                    <div style="" id="section3"><a href="" style="text-transform: uppercase; text-decoration: none; color: gray">Whole Chicken Feet</a></div>
-
-                    <div style="margin-top: 20px; display: flex; align-items: center; box-sizing: border-box">
-                        <img style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;" src="@Model.StoreImage" alt="@Model.StoreName" />
-                        <div style="padding: 0 3%; width: 65%">
-                            <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                                <span style="font-weight: bold; font-size: 16px;" title="Boneless Thai Chicken Feet - Size M (Large box)">
-                                    Boneless Thai Chicken Feet - Size M (Large box)
-                                </span>
-                            </div>
-                            <div>
-                                <span style="font-size: 13px; color: #464646;">
-                                    Boneless chicken feet mixed with Thai sauce + special dipping sauce
-                                </span>
-                            </div>
-                        </div>
-                        <div style="padding: 0 3%; display: flex; flex-direction: column; align-items: flex-end;">
-                            <div>
-                                <span style="text-decoration: line-through; color: #6d6f71; font-size: 13px;">
-                                    @((int)(Model.StoreMaxPrice / 5)).000
-                                </span><sup>đ</sup>
-                            </div>
-                            <div>
-                                <span style="color: #0288d1; font-size: 16px;">
-                                    @((int)(Model.StoreMaxPrice / 6)).000
-                                </span><sup style="color: #0288d1;">đ</sup>
-                            </div>
-                        </div>
-                        <div class="btn-adding" style="10px; font-size: 20px; cursor: pointer;">
-                            +
-                        </div>
-                    </div>
-                    <hr />
-
-
-                    <div style="margin-top: 20px; display: flex; align-items: center; box-sizing: border-box">
-                        <img style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;" src="@Model.StoreImage" alt="@Model.StoreName" />
-                        <div style="padding: 0 3%; width: 65%">
-                            <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                                <span style="font-weight: bold; font-size: 16px;" title="Boneless Thai Chicken Feet - Size M (Large box)">
-                                    Boneless Thai Chicken Feet - Size M (Large box)
-                                </span>
-                            </div>
-                            <div>
-                                <span style="font-size: 13px; color: #464646;">
-                                    Boneless chicken feet mixed with Thai sauce + special dipping sauce
-                                </span>
-                            </div>
-                        </div>
-                        <div style="padding: 0 3%; display: flex; flex-direction: column; align-items: flex-end;">
-                            <div>
-                                <span style="text-decoration: line-through; color: #6d6f71; font-size: 13px;">
-                                    @((int)(Model.StoreMaxPrice / 5)).000
-                                </span><sup>đ</sup>
-                            </div>
-                            <div>
-                                <span style="color: #0288d1; font-size: 16px;">
-                                    @((int)(Model.StoreMaxPrice / 6)).000
-                                </span><sup style="color: #0288d1;">đ</sup>
-                            </div>
-                        </div>
-                        <div class="btn-adding" style="10px; font-size: 20px; cursor: pointer;">
-                            +
-                        </div>
-                    </div>
-                    <hr />
+                    }
                 </div>
 
+                <div class="content" style="box-sizing: border-box">
+                    <div style="padding: 20px">
+                        @* <div>
+                            <input style="width: 100px; background-color: white; border: 1px solid gray; width: 100%" placeholder="Search" />
+                        </div> *@
+                        @foreach (var menu in menus)
+                        {
+                            <div style="" id="section-@menu.Id" style="">
+                                <span style="text-transform: uppercase; text-decoration: none; color: gray; font-size: 14px">
+                                    @menu.Name
+                                </span>
+                            </div>
+                            <div id="products-container-@menu.Id" style="margin-top: 20px; display: flex; flex-direction: column;">
+                            </div>
+                        }
+                    </div>
+                </div>
 
-            </div>
+                <!-- Right Menu - Cart Section -->
+                <div class="right-menu" id="rightMenu">
+                    <h4 class="cart-title">CART</h4>
+                    <div class="close-btn" id="close-cart-btn">
+                        Remove all
+                    </div>
+                    <hr class="divider" />
+                    <div id="cart-items-container" class="cart-items">
+                        <!-- Cart items will be listed here -->
+                    </div>
+                    <button id="checkout-button" class="checkout-btn">
+                        Checkout
+                    </button>
+                </div>
 
-            <div class="right-menu" style="">
+                <!-- Modal for Checkout -->
+                <div id="checkout-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); justify-content: center; align-items: center; z-index: 1000;">
+                    <div style="background: white; padding: 20px; border-radius: 5px; max-width: 800px; width: 100%; max-height: 80%; overflow-y: auto;">
+                        <h2>Checkout</h2>
+                        <div id="checkout-content">
+                            <!-- Address and order summary will be loaded here -->
+                        </div>
+                        <button id="close-modal" style="margin-top: 20px; padding: 10px; background-color: #dc3545; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">Close</button>
+                        <button id="order-button" style="margin-top: 20px; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;  float: right">Order</button>
+                    </div>
+                </div>
+
+                <!-- Background Overlay -->
+                <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); z-index: 999;"></div>
             </div>
         </div>
-
     </div>
-
-
 </div>
+
+<script>
+    var menuIds = @Html.Raw(Json.Serialize(menus.Select(menu => menu.Id).ToList()));
+</script>
 
 <script src="~/js/storedetail.js" asp-append-version="true"></script>

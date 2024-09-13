@@ -213,5 +213,35 @@ namespace BusinessLogicLayerFront.Services
         }
 
 
+        public async Task<UserDto> UpdateUser(UserDto userDto)
+        {
+            try
+            {
+                // Chuyển đổi đối tượng userDto thành JSON
+                var content = new StringContent(JsonConvert.SerializeObject(userDto), Encoding.UTF8, "application/json");
+
+                // Gọi API bằng phương thức PUT
+                var response = await _httpClient.PutAsync($"api/user/{userDto.Id}", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    // Đọc kết quả trả về từ API
+                    var jsonString = await response.Content.ReadAsStringAsync();
+                    var updatedUser = JsonConvert.DeserializeObject<UserDto>(jsonString);
+                    return updatedUser;
+                }
+                else
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    throw new HttpRequestException($"Request failed with status code {response.StatusCode} and reason: {response.ReasonPhrase}. Response content: {errorContent}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+                throw new ApplicationException("An error occurred while updating the user.", ex);
+            }
+        }
+
     }
 }

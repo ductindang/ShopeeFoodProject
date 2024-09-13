@@ -28,7 +28,7 @@ namespace DataAccessLayer.Models
 
         public int? DiscountId { get; set; }
         [ForeignKey("DiscountId")]
-        public Discount Discount { get; set; }
+        //public Discount Discount { get; set; }
 
         [Required]
         [MaxLength(300)]
@@ -39,5 +39,8 @@ namespace DataAccessLayer.Models
         public string? Description { get; set; }
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
+        public virtual Discount? Discount { get; set; }
+        public int Quantity { get; set; }
+
     }
 }

@@ -1,4 +1,22 @@
-﻿document.addEventListener("DOMContentLoaded", function () {
+﻿
+
+
+$(document).ready(function () {
+    $('#userDropdown').click(function () {
+        $('#userMenu').toggle(); // Toggle visibility of the dropdown menu
+    });
+
+    // Optional: Hide the dropdown if clicking outside of it
+    $(document).click(function (event) {
+        if (!$(event.target).closest('#userDropdown, #userMenu').length) {
+            $('#userMenu').hide();
+        }
+    });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
     var selectElement = document.getElementById("provinceSelect");
 
     // Lấy các tham số từ URL
@@ -9,7 +27,6 @@
     // Đặt giá trị cho dropdown
     selectElement.value = selectedId;
     updateSelectedText(selectElement);
-
     selectElement.addEventListener("change", function () {
         sessionStorage.setItem("SelectedProvinceId", this.value);
         updateSelectedText(this);
@@ -21,6 +38,17 @@
         handleHover(sessionStorage.getItem('SelectedProvinceId'), id);
     });
 });
+
+
+    //var userCheckJson = @Html.Raw(JsonConvert.SerializeObject(userCheckJson));
+    //if (userCheckJson) {
+    //    // Chuyển đổi userCheckJson thành đối tượng JavaScript và lưu vào localStorage
+    //    var userCheck = JSON.parse(userCheckJson);
+    //localStorage.setItem("userCheck", JSON.stringify(userCheck));
+    //} else {
+    //    // Xóa userCheck khỏi localStorage nếu không có dữ liệu
+    //    localStorage.removeItem("userCheck");
+    //}
 
 function updateSelectedText(selectElement) {
     const selectedOption = selectElement.options[selectElement.selectedIndex];

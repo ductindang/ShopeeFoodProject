@@ -1,0 +1,90 @@
+﻿@model BusinessLogicLayerFront.DTOs.UserAddressDto
+@using BusinessLogicLayerFront.DTOs
+@using Newtonsoft.Json
+
+@{
+    var userCheckJson = Context.Session.GetString("userCheck");
+    var userCheck = JsonConvert.DeserializeObject<UserDto>(userCheckJson);
+}
+
+
+<form asp-action="AddAddressFromForm" id="add-address-form" method="post" onsubmit="return validateForm()">
+    <input asp-for="UserId" type="hidden" value="@userCheck.Id" />
+    <div>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div style="display:flex; margin-top: 20px; opacity: 0.8">
+            <div style="flex: 1">
+                <div><label for="nameReminiscent" style="font-size: 12px">Name reminiscent<span style="color: red; font-size: 18px">*</span></label></div>
+                <input asp-for="NameReminiscent" name="NameReminiscent" id="nameReminiscent" style="border: none; border-bottom: 1px solid gray; width: 90%; opacity: 1" placeholder="Ex: Mr Dale" required />
+                <span asp-validation-for="NameReminiscent" class="text-danger"></span>
+            </div>
+            <div style="flex: 1">
+                <div><label for="fullname" style="font-size: 12px">Full name</label></div>
+                <input id="fullname" style="border: none; border-bottom: 1px solid gray; width: 90%; opacity: 1" value="@userCheck.FullName" readonly />
+            </div>
+        </div>
+
+        <div style="display:flex; margin-top: 20px; opacity: 0.8">
+            <div style="flex: 1">
+                <div><label for="email" style="font-size: 12px">Email</label></div>
+                <input type="email" id="email" style="border: none; border-bottom: 1px solid gray; width: 90%; opacity: 1" value="@userCheck.Email" readonly />
+            </div>
+            <div style="flex: 1">
+                <div><label for="phone" style="font-size: 12px">Phone<span style="color: red; font-size: 18px">*</span></label></div>
+                <input asp-for="PhoneNumber" oninput="validatePhoneNumber()" name="PhoneNumber" id="phoneInput" style="border: none; border-bottom: 1px solid gray; width: 90%; opacity: 1" placeholder="Phone" required />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                <span id="phone-number-error" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div style="display:flex; margin-top: 20px; opacity: 0.8">
+            <div style="flex: 1">
+                <div><label for="street" style="font-size: 12px">House number and street<span style="color: red; font-size: 18px">*</span></label></div>
+                <input asp-for="Street" id="street" style="border: none; border-bottom: 1px solid gray; width: 95%; opacity: 1" placeholder="Ex: 307/12 Nguyen Van Troi" required />
+                <span asp-validation-for="Street" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div style="display:flex; margin-top: 20px; opacity: 0.8">
+            <div style="flex: 1">
+                <select class="nav-link text-dark" id="provinceSel" onchange="ChangeProvince()" style="width: 90%">
+                    <option value="-1">Choose province/city</option>
+                    @{
+                        var provSessionJson = Context.Session.GetString("provSession");
+                        if (!string.IsNullOrEmpty(provSessionJson))
+                        {
+                            var provSession = JsonConvert.DeserializeObject<List<ProvinceDto>>(provSessionJson);
+
+                            foreach (var province in provSession)
+                            {
+                                <option value="@province.Id" data-name="@province.Name">@province.Name</option>
+                            }
+                        }
+                    }
+                </select>
+                <span id="province-error" class="text-danger"></span>
+            </div>
+            <div style="flex: 1">
+                <select class="nav-link text-dark" id="district-sel" style="width: 90%" onchange="ChangeDistrict()">
+                    <option value="-1">Choose District</option>
+                </select>
+                <span id="district-error" class="text-danger"></span>
+            </div>
+
+            <div style="flex: 1">
+                <select asp-for="WardId" onchange="ChangeWard()" class="nav-link text-dark" id="ward-sel" style="width: 90%">
+                    <option value="-1">Choose Ward</option>
+                </select>
+                <span id="ward-error" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div>
+            <button id="close-address" onclick="CloseAddress()" style="margin-top: 20px; padding: 10px; background-color: #dc3545; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">Close</button>
+            <button id="add-button" type="submit" style="margin-top: 20px; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;  float: right">Add</button>
+        </div>
+    </div>
+</form>
+
+
+

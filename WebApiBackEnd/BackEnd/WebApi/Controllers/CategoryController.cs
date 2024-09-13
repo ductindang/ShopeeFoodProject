@@ -20,8 +20,16 @@ namespace WebApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CategoryRequest>>> GetAllCategories()
         {
-            var cates = await _categoryService.GetAllCategories();
-            return Ok(cates);
+            try
+            {
+                var cates = await _categoryService.GetAllCategories();
+                return Ok(cates);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
         }
 
         [HttpGet]
@@ -29,7 +37,7 @@ namespace WebApi.Controllers
         public async Task<ActionResult<CategoryRequest>> GetCategoryById(int id)
         {
             var cate = await _categoryService.GetCategoryById(id);
-            if(cate == null)
+            if (cate == null)
             {
                 return NotFound();
             }
@@ -62,7 +70,7 @@ namespace WebApi.Controllers
         public async Task<ActionResult<CategoryRequest>> DeleteCategory(int id)
         {
             var cate = await _categoryService.GetCategoryById(id);
-            if(cate == null)
+            if (cate == null)
             {
                 return NotFound();
             }

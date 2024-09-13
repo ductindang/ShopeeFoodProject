@@ -158,5 +158,7 @@ namespace BusinessLogicLayerFront.Services
                 throw new ApplicationException("An error occurred while fetching the products by product name.", ex);
             }
         }
+
+        
     }
 }
